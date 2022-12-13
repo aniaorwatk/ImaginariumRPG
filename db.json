@@ -1,7 +1,30 @@
 {
-    "test": [
+    "patronite": {
+        "email": "imagrpg@gmail.com"
+    },
+    "banner": {
+        "scr_banner": "https://images92.fotosik.pl/636/dde35022c5c9a479med.jpg"
+    },
+    "events": [
         {
-            "title": "test server json"
+            "id": 1,
+            "title": "Każdy jest Johnem 1",
+            "src_event": "https://images92.fotosik.pl/636/354f31f1ab039d57med.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Każdy jest Johnem 2",
+            "src_event": "https://images92.fotosik.pl/636/354f31f1ab039d57med.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Każdy jest Johnem 3",
+            "src_event": "https://images92.fotosik.pl/636/354f31f1ab039d57med.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Każdy jest Johnem 4",
+            "src_event": "https://images92.fotosik.pl/636/354f31f1ab039d57med.jpg"
         }
     ],
     "media": [
@@ -45,7 +68,7 @@
             "title": "Spotify",
             "logo": "ph:spotify-logo",
             "color": "#43D136",
-            "link": ""
+            "link": "https://open.spotify.com/show/2s3Pim6Wj89dpr04cwnJAg"
         },
         {
             "title": "Sklep",
