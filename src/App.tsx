@@ -24,8 +24,6 @@ interface IEventsType {
 }
 
 const App = () => {
-
-
   const URL_MEDIA = "http://localhost:3000/media"
   const URL_PATRONITE = "http://localhost:3000/patronite"
   const URL_BANNER = "http://localhost:3000/banner"
@@ -43,9 +41,7 @@ const App = () => {
       .then((res) => res.json())
       .then((res) => {
         setBanner(res);
-        
       })
-
       .catch((err) => console.error(err));
   }, []);
 
@@ -56,12 +52,9 @@ const App = () => {
       .then((res) => res.json())
       .then((res) => {
         setEvents(res);
-      
       })
-
       .catch((err) => console.error(err));
   }, []);
-
 
   useEffect(() => {
     fetch(URL_MEDIA, {
@@ -71,7 +64,6 @@ const App = () => {
       .then((res) => {
         setMedia(res);
       })
-
       .catch((err) => console.error(err));
   }, []);
 
@@ -83,7 +75,6 @@ const App = () => {
       .then((res) => {
         SetPatronite(res);
       })
-
       .catch((err) => console.error(err));
   }, []);
 
@@ -108,13 +99,10 @@ const App = () => {
     )
   })
 
-
-
-
   return (
     <div className="App">
       <h1>Imaginarium</h1>
-      {patronite?.email && <><LogoPatronite /><>{patronite?.email}</></>}
+      {patronite?.email && <><LogoPatronite /><p>{patronite?.email}</p></>}
       <div className="media">
         {allMedia}
       </div>
@@ -122,7 +110,6 @@ const App = () => {
         {allEvents}
       </div>
       <img src={banner?.scr_banner} alt="banner" className="banner"/>
-
     </div>
   );
 }
