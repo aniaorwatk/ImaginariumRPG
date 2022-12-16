@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import { Icon } from '@iconify/react';
-import { ReactComponent as LogoPatronite } from "./assets/patronite.svg"
+
 import "./index.css"
+import Header from "./components/Header/Header";
+import { IonApp, IonContent } from "@ionic/react";
+// import { LogoPatronite } from "./components/Icons/LogoPatronite";
+import { ReactComponent as LogoPatronite } from "./assets/patronite.svg"
 
 interface IMediaTyp {
   title: string,
@@ -100,17 +104,24 @@ const App = () => {
   })
 
   return (
-    <div className="App">
+    <IonApp className="u">
+
+
+   
+   <Header/>    
       <h1>Imaginarium</h1>
       {patronite?.email && <><LogoPatronite /><p>{patronite?.email}</p></>}
       <div className="media">
         {allMedia}
       </div>
+     
       <div className="events">
         {allEvents}
       </div>
       <img src={banner?.scr_banner} alt="banner" className="banner"/>
-    </div>
+  
+ </IonApp>
+
   );
 }
 

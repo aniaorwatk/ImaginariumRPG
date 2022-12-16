@@ -1,7 +1,0 @@
-{
-  "name": "imaginarium",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}

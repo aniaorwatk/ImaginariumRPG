@@ -1,0 +1,7 @@
+{
+  "name": "Imaginarium",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

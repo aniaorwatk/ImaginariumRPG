@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+
+
+
+// Call the element loader after the platform has been bootstrapped
+defineCustomElements(window);
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
