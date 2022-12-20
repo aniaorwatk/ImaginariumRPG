@@ -6,6 +6,9 @@ import Header from "./components/Header/Header";
 import { IonApp, IonContent } from "@ionic/react";
 // import { LogoPatronite } from "./components/Icons/LogoPatronite";
 import { ReactComponent as LogoPatronite } from "./assets/patronite.svg"
+import { isPlatform } from '@ionic/react';
+
+isPlatform('ios')
 
 interface IMediaTyp {
   title: string,
