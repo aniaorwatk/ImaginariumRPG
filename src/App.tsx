@@ -12,7 +12,7 @@ interface IMediaTyp {
 }
 
 interface IPatroniteType {
-  email: string
+  patronite_email: string
 }
 interface IBannerType {
   scr_banner: string
@@ -24,6 +24,7 @@ interface IEventsType {
 }
 
 const App = () => {
+  const URL ="https://api.storyblok.com/v2/cdn/stories/story?version=draft&token=jE4RYFqUUiAqm8wQBDxiqgtt&cv=1671780619"
   const URL_MEDIA = "http://localhost:3000/media"
   const URL_PATRONITE = "http://localhost:3000/patronite"
   const URL_BANNER = "http://localhost:3000/banner"
@@ -68,12 +69,13 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    fetch(URL_PATRONITE, {
+    fetch(URL, {
       method: "GET",
     })
       .then((res) => res.json())
       .then((res) => {
-        SetPatronite(res);
+        SetPatronite(res.story.content);
+        console.log(res.story.content.patronite_email)
       })
       .catch((err) => console.error(err));
   }, []);
@@ -102,7 +104,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>Imaginarium</h1>
-      {patronite?.email && <><LogoPatronite /><p>{patronite?.email}</p></>}
+      {patronite?.patronite_email && <><LogoPatronite /><p>{patronite?.patronite_email}</p></>}
       <div className="media">
         {allMedia}
       </div>
