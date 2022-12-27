@@ -15,20 +15,17 @@ interface IPatroniteType {
   patronite_email: string
 }
 interface IBannerType {
-  scr_banner: string
+  filename: string
 }
 interface IEventsType {
   id: number,
   title: string,
-  src_event: string
+  filename: string
 }
 
 const App = () => {
   const URL ="https://api.storyblok.com/v2/cdn/stories/story?version=draft&token=jE4RYFqUUiAqm8wQBDxiqgtt&cv=1671780619"
   const URL_MEDIA = "http://localhost:3000/media"
-  const URL_PATRONITE = "http://localhost:3000/patronite"
-  const URL_BANNER = "http://localhost:3000/banner"
-  const URL_EVENTS = "http://localhost:3000/events"
 
   const [media, setMedia] = useState<IMediaTyp[]>([])
   const [patronite, SetPatronite] = useState<IPatroniteType>()
@@ -36,23 +33,27 @@ const App = () => {
   const [events, setEvents] = useState<IEventsType[]>([])
 
   useEffect(() => {
-    fetch(URL_BANNER, {
+    fetch(URL, {
       method: "GET",
     })
       .then((res) => res.json())
       .then((res) => {
-        setBanner(res);
+        setBanner(res.story.content.banner);
+
+        console.log(res.story.content.banner.filename)
       })
       .catch((err) => console.error(err));
+
   }, []);
 
   useEffect(() => {
-    fetch(URL_EVENTS, {
+    fetch(URL, {
       method: "GET",
     })
       .then((res) => res.json())
       .then((res) => {
-        setEvents(res);
+        setEvents(res.story.content.events);
+        console.log(res.story.content.media)
       })
       .catch((err) => console.error(err));
   }, []);
@@ -95,7 +96,7 @@ const App = () => {
   const allEvents = events.map(event => {
     return (
       <div key={event.id}>
-        <img src={event.src_event} alt={event.title} />
+        <img src={event.filename} alt={event.title} />
         <p>{event.title}</p>
       </div>
     )
@@ -111,7 +112,7 @@ const App = () => {
       <div className="events">
         {allEvents}
       </div>
-      <img src={banner?.scr_banner} alt="banner" className="banner"/>
+      <img src={banner?.filename} alt="banner" className="banner"/>
     </div>
   );
 }
