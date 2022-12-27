@@ -28,7 +28,8 @@ setupIonicReact();
 const App: React.FC = () => {
   return (
     <IonApp>
-      <h1>Imag</h1>
+      <h1>Imaginarium</h1>
+      <h2>test</h2>
       <p>ania</p>
 
       {/* <IonReactRouter>
