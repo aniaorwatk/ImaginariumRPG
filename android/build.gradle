@@ -17,15 +17,6 @@ buildscript {
 
 apply from: "variables.gradle"
 
-android {
-  bundle {
-    storeArchive {
-      enable = false
-    }
-  }
-}
-
-
 allprojects {
     repositories {
         google()
