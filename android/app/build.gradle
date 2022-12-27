@@ -1,8 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-
-    namespace 'com.example.app'
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "com.example.app"
@@ -50,6 +48,6 @@ try {
     if (servicesJSON.text) {
         apply plugin: 'com.google.gms.google-services'
     }
-} catch(Exception) {
+} catch(Exception e) {
     logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
 }
