@@ -1,0 +1,80 @@
+{
+    "patronite": {
+        "email": "imagrpg@gmail.com"
+    },
+    "banner": {
+        "scr_banner": "https://images92.fotosik.pl/636/dde35022c5c9a479med.jpg"
+    },
+    "events": [
+        {
+            "id": 1,
+            "title": "Każdy jest Johnem 1",
+            "src_event": "https://images92.fotosik.pl/636/354f31f1ab039d57med.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Każdy jest Johnem 2",
+            "src_event": "https://images92.fotosik.pl/636/354f31f1ab039d57med.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Każdy jest Johnem 3",
+            "src_event": "https://images92.fotosik.pl/636/354f31f1ab039d57med.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Każdy jest Johnem 4",
+            "src_event": "https://images92.fotosik.pl/636/354f31f1ab039d57med.jpg"
+        }
+    ],
+    "media": [
+        {
+            "title": "YouTube",
+            "logo": "ant-design:youtube-outlined",
+            "color": "#d13636",
+            "link": "https://www.youtube.com/@ImaginariumRPG"
+        },
+        {
+            "title": "Twitch",
+            "logo": "simple-icons:twitch",
+            "color": "#824fed",
+            "link": "https://www.twitch.tv/imaginariumrpg"
+        },
+        {
+            "title": "Discord",
+            "logo": "logos:discord-icon",
+            "color": "",
+            "link": "https://discord.gg/PDPRu5e4"
+        },
+        {
+            "title": "Facebook",
+            "logo": "jam:facebook-square",
+            "color": "#824fed",
+            "link": "https://www.facebook.com/groups/213636616959291/user/100065035838340"
+        },
+        {
+            "title": "Instagram",
+            "logo": "mdi:instagram",
+            "color": "#F47BFF",
+            "link": "https://www.instagram.com/imaginariumpl/"
+        },
+        {
+            "title": "TikTok",
+            "logo": "iconoir:tiktok",
+            "color": "#FF8989",
+            "link": "https://www.tiktok.com/@imaginariumrpg"
+        },
+        {
+            "title": "Spotify",
+            "logo": "ph:spotify-logo",
+            "color": "#43D136",
+            "link": "https://open.spotify.com/show/2s3Pim6Wj89dpr04cwnJAg"
+        },
+        {
+            "title": "Sklep",
+            "logo": "ic:outline-shopping-bag",
+            "color": " rgb(230, 219, 205)",
+            "link": ""
+        }
+    ]
+}
