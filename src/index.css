@@ -17,6 +17,7 @@ code {
     monospace;
 }
 
+
 .media {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -33,4 +34,8 @@ code {
 
 .banner {
   border-radius: 20px;
+}
+.u{
+  background-image: url("./assets//bogumil_in_love.svg");
+  background-repeat: no-repeat;
 }

@@ -25,6 +25,7 @@ import '@ionic/react/css/display.css';
 // import { Icon } from 'ionicons/dist/types/components/icon/icon';
 import { useEffect, useState } from 'react';
 import "./index.css"
+import Header from './components/Header/Header';
 
 setupIonicReact();
 
@@ -127,8 +128,10 @@ const App: React.FC = () => {
   })
 
   return (
-    <div className="App">
-      <h1>Imaginarium</h1>
+    <div className="u">
+
+      <Header/>
+
       {patronite?.patronite_email && <><LogoPatronite /><p>{patronite?.patronite_email}</p></>}
       <div className="media">
         {allMedia}
@@ -137,7 +140,7 @@ const App: React.FC = () => {
         {allEvents}
       </div>
       <img src={banner?.scr_banner} alt="banner" className="banner"/>
-    </div>
+      </div>
   );
 }
 

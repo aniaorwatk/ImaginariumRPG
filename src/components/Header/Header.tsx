@@ -43,7 +43,7 @@ const Header = () => {
 
 
 
-      <IonToolbar >
+      {/* <IonToolbar > */}
        <LogoWhite  className='header_logo'/>  
    
 
@@ -56,7 +56,7 @@ const Header = () => {
           <h1>Imaginarium RPG</h1>
         </IonTitle>
         <p>Sesje RPG | Warsztaty | Bohomazki</p>
-      </IonToolbar>
+      {/* </IonToolbar> */}
 
     </div>
 
