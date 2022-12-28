@@ -5,8 +5,8 @@ import "./index.css"
 
 interface IMediaTyp {
   title: string,
-  logo: string,
-  link: string,
+  filename: string,
+  id: number,
   color: string,
   colorTwo: string
 }
@@ -59,12 +59,12 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    fetch(URL_MEDIA, {
+    fetch(URL, {
       method: "GET",
     })
       .then((res) => res.json())
       .then((res) => {
-        setMedia(res);
+        setMedia(res.story.content.media);
       })
       .catch((err) => console.error(err));
   }, []);
@@ -83,11 +83,8 @@ const App = () => {
 
   const allMedia = media.map(one => {
     return (
-      <div key={one.title}>
-        <Icon icon={one.logo}
-          color={one.color}
-          width="40" height="40"
-        />
+      <div key={one.id}>
+      <img src={one.filename}/>
         <p>{one.title}</p>
       </div>
     )
