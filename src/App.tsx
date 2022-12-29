@@ -1,92 +1,58 @@
 import { useEffect, useState } from "react";
-import { Icon } from '@iconify/react';
+import { getAPI, URL_IMAGINARIUM } from "./API/APIGet";
 import { ReactComponent as LogoPatronite } from "./assets/patronite.svg"
 import "./index.css"
 
-interface IMediaTyp {
+export interface IMediaTyp {
+  story: any,
   title: string,
   filename: string,
   id: number,
-  color: string,
-  colorTwo: string
+  source: string
 }
 
-interface IPatroniteType {
+export interface IPatroniteType {
+  story: any,
   patronite_email: string
 }
-interface IBannerType {
+export interface IBannerType {
+  story: any,
   filename: string
 }
-interface IEventsType {
+export interface IEventsType {
+  story: any,
   id: number,
   title: string,
   filename: string
 }
 
 const App = () => {
-  const URL ="https://api.storyblok.com/v2/cdn/stories/story?version=draft&token=jE4RYFqUUiAqm8wQBDxiqgtt&cv=1671780619"
-  const URL_MEDIA = "http://localhost:3000/media"
 
   const [media, setMedia] = useState<IMediaTyp[]>([])
   const [patronite, SetPatronite] = useState<IPatroniteType>()
   const [banner, setBanner] = useState<IBannerType>()
   const [events, setEvents] = useState<IEventsType[]>([])
 
-  useEffect(() => {
-    fetch(URL, {
-      method: "GET",
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        setBanner(res.story.content.banner);
-
-        console.log(res.story.content.banner.filename)
-      })
-      .catch((err) => console.error(err));
-
-  }, []);
+  const action = (res: IMediaTyp | IBannerType | IEventsType | IPatroniteType) => {
+    const response = res.story.content
+    setMedia(response.media)
+    setBanner(response.banner)
+    setEvents(response.events)
+    SetPatronite(response)
+  }
 
   useEffect(() => {
-    fetch(URL, {
-      method: "GET",
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        setEvents(res.story.content.events);
-        console.log(res.story.content.media)
-      })
-      .catch((err) => console.error(err));
-  }, []);
-
-  useEffect(() => {
-    fetch(URL, {
-      method: "GET",
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        setMedia(res.story.content.media);
-      })
-      .catch((err) => console.error(err));
-  }, []);
-
-  useEffect(() => {
-    fetch(URL, {
-      method: "GET",
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        SetPatronite(res.story.content);
-        console.log(res.story.content.patronite_email)
-      })
-      .catch((err) => console.error(err));
+    getAPI(URL_IMAGINARIUM, action)
   }, []);
 
   const allMedia = media.map(one => {
     return (
-      <div key={one.id}>
-      <img src={one.filename}/>
-        <p>{one.title}</p>
-      </div>
+      <a href={`${one.source}`} key={one.id}>
+        <div  className="media__icon">
+          <img src={one.filename} alt={one.filename}/>
+          <p>{one.title}</p>
+        </div>
+      </a>
     )
   })
 
@@ -109,7 +75,7 @@ const App = () => {
       <div className="events">
         {allEvents}
       </div>
-      <img src={banner?.filename} alt="banner" className="banner"/>
+      <img src={banner?.filename} alt="banner" className="banner" />
     </div>
   );
 }
