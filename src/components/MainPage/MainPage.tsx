@@ -1,11 +1,9 @@
-import { useEffect, useState } from "react"
-import { getAPI, URL_IMAGINARIUM } from "../../API/APIGet"
 import Banner from "../Banner/Banner"
 import Events from "../Events/Events"
 import Media from "../Media/Media"
 import Patronite from "../Patronite/Patronite"
-import { ReactComponent as LogoPatronite } from "./../../assets/patronite.svg"
 import "./../../index.css"
+import "./MainPage.css"
 
 
 
@@ -17,8 +15,9 @@ const MainPage = () => {
      <Patronite/>
  
       <Media/>
+     <Banner/>      
     <Events/>
-     <Banner/>
+
     </div>
   );
        

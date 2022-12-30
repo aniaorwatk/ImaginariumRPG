@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
-import { getAPI, IBannerType, IEventsType, IMediaTyp, IPatroniteType, URL_IMAGINARIUM } from "../../API/APIGet"
+import { getAPI, IBannerType,IResType, URL_IMAGINARIUM } from "../../API/APIGet"
 
 const Banner =()=>{
 
     const [banner, setBanner] = useState<IBannerType>()
 
-    const action = (res: IMediaTyp | IBannerType | IEventsType | IPatroniteType) => {
+    const action = (res: IResType) => {
         const response = res.story.content
         setBanner(response.banner)
       }

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
-import { getAPI, IBannerType, IEventsType, IMediaTyp, IPatroniteType, URL_IMAGINARIUM } from "../../API/APIGet"
+import { getAPI, IEventsType, IResType, URL_IMAGINARIUM } from "../../API/APIGet"
 import "./Events.css"
 
 const Events = () => {
     const [events, setEvents] = useState<IEventsType[]>([])
 
-    const action = (res: IMediaTyp | IBannerType | IEventsType | IPatroniteType) => {
+    const action = (res: IResType) => {
         const response = res.story.content
         setEvents(response.events)
     }
@@ -16,9 +16,9 @@ const Events = () => {
 
     const allEvents = events.map(event => {
         return (
-            <div key={event.id}>
-                <img src={event.filename} alt={event.title} />
-                <p>{event.title}</p>
+            <div key={event.id} className="event">
+                <img src={event.filename} alt={event.title} className="event__img"/>
+                <p className="event__title">{event.title}</p >
             </div>
         )
     })

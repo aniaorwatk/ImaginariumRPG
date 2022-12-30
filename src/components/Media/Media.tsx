@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react"
-import { getAPI, IMediaTyp, IBannerType, IEventsType, IPatroniteType, URL_IMAGINARIUM } from "../../API/APIGet"
+import { getAPI, IMediaTyp, URL_IMAGINARIUM, IResType } from "../../API/APIGet"
 import "./Media.css"
 
 const Media = () => {
 
     const [media, setMedia] = useState<IMediaTyp[]>([])
 
-    const action = (res: IMediaTyp | IBannerType | IEventsType | IPatroniteType) => {
+    const action = (res: IResType) => {
         const response = res.story.content
         setMedia(response.media)
     }
@@ -17,9 +17,11 @@ const Media = () => {
 
     const allMedia = media.map(one => {
         return (
-            <a href={`${one.source}`} key={one.id}>
+            <a href={`${one.source}`} key={one.id} className="media__link">
                 <div className="media__icon">
-                    <img src={one.filename} alt={one.filename} />
+                    <div className="media__icon-img">
+                    <img src={one.filename} alt={one.filename}/>   
+                    </div>
                     <p>{one.title}</p>
                 </div>
             </a>
