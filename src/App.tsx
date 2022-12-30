@@ -1,3 +1,4 @@
+
 import { Route, Routes } from "react-router-dom";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import MainPage from "./components/MainPage/MainPage";
