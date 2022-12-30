@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageNotFound Should render 1`] = `
+<div>
+  <div
+    class="pageNotFound"
+  >
+    <p>
+      Ups!!! Coś poszło nie tak.
+    </p>
+    <p>
+      Strona nie odpowiada.
+    </p>
+  </div>
+</div>
+`;
