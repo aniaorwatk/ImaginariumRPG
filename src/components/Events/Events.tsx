@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { getAPI, IEventsType, IResType, URL_IMAGINARIUM } from "../../API/APIGet"
+import { LogoBLotr } from "../Logo/LogoBLotr"
 import { LogoPublishingHouse } from "../Logo/LogoPublishingHouse"
 
 import "./Events.css"
@@ -26,9 +27,9 @@ const Events = () => {
     })
     return (
         <div className="events">
+            <LogoBLotr className="events__bogumil" />
             <div className="events__publishingHouse">
                 <LogoPublishingHouse />
-
             </div>
             {allEvents}
         </div>
