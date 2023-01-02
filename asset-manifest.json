@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/ImaginariumRPG/static/css/main.1e09be8c.css",
-    "main.js": "/ImaginariumRPG/static/js/main.aa98216a.js",
+    "main.css": "/ImaginariumRPG/static/css/main.33d1d48b.css",
+    "main.js": "/ImaginariumRPG/static/js/main.44a3a92f.js",
     "static/js/787.bceb0d31.chunk.js": "/ImaginariumRPG/static/js/787.bceb0d31.chunk.js",
     "static/media/bLotr.svg": "/ImaginariumRPG/static/media/bLotr.c4a903e69af65b0f34a52ef68603f81f.svg",
+    "static/media/bogumil_love_s.svg": "/ImaginariumRPG/static/media/bogumil_love_s.25bebadfdf40050ade53.svg",
+    "static/media/white_logo.svg": "/ImaginariumRPG/static/media/white_logo.e94be49bc3e2b1ed275fed859008dd85.svg",
     "static/media/wydawnictwo.svg": "/ImaginariumRPG/static/media/wydawnictwo.62e139da95979733cd192348eee1b181.svg",
     "static/media/patronite.svg": "/ImaginariumRPG/static/media/patronite.eb70caea510f5437fcdd206edc71088d.svg",
     "index.html": "/ImaginariumRPG/index.html",
-    "main.1e09be8c.css.map": "/ImaginariumRPG/static/css/main.1e09be8c.css.map",
-    "main.aa98216a.js.map": "/ImaginariumRPG/static/js/main.aa98216a.js.map",
+    "static/media/message.svg": "/ImaginariumRPG/static/media/message.db47039f6a16900f755f7e09dd3c3655.svg",
+    "main.33d1d48b.css.map": "/ImaginariumRPG/static/css/main.33d1d48b.css.map",
+    "main.44a3a92f.js.map": "/ImaginariumRPG/static/js/main.44a3a92f.js.map",
     "787.bceb0d31.chunk.js.map": "/ImaginariumRPG/static/js/787.bceb0d31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e09be8c.css",
-    "static/js/main.aa98216a.js"
+    "static/css/main.33d1d48b.css",
+    "static/js/main.44a3a92f.js"
   ]
 }
