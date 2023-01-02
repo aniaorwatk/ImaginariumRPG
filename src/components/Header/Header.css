@@ -1,0 +1,42 @@
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.header__bogumil {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./../../assets/bogumil_love_s.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.header__logo {
+    margin-top: 91px;
+    background: rgb(29, 29, 128);
+    border-radius: 50%;
+}
+
+.header__title {
+    width: 265px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 8px;
+}
+
+.header__information {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 24px 0;
+}

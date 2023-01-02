@@ -2,13 +2,11 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  display: flex;
+  /* display: flex; */
   font-family: 'Mulish', sans-serif;;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background:rgb(29, 29, 128);
   color: white;
-  min-height: 100vh;
+  min-height: 100vw;
   overflow-x: hidden;
 }
 
@@ -16,21 +14,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* .media {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-  margin: 20px;
-}
-
-.events {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin: 20px;
-}
-
-.banner {
-  border-radius: 20px;
-} */

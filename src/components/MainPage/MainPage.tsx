@@ -1,26 +1,24 @@
-import Banner from "../Banner/Banner"
-import Events from "../Events/Events"
-import Media from "../Media/Media"
-import Patronite from "../Patronite/Patronite"
-import "./../../index.css"
-import "./MainPage.css"
-
-
+import Banner from "../Banner/Banner";
+import Contact from "../Contact/Contact";
+import Events from "../Events/Events";
+import Header from "../Header/Header";
+import Media from "../Media/Media";
+import Patronite from "../Patronite/Patronite";
+import "./../../index.css";
+import "./MainPage.css";
 
 const MainPage = () => {
 
   return (
     <div className="App">
-      <h1>Imaginarium</h1>
-     <Patronite/>
- 
-      <Media/>
-     <Banner/>      
-    <Events/>
-
+      <Contact/>
+      <Header />
+      <Patronite />
+      <Media />
+      <Banner />
+      <Events />
     </div>
   );
-       
-    
 }
+
 export default MainPage

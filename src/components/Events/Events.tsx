@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react"
-import { getAPI, IEventsType, IResType, URL_IMAGINARIUM } from "../../API/APIGet"
-import { LogoBLotr } from "../Logo/LogoBLotr"
-import { LogoPublishingHouse } from "../Logo/LogoPublishingHouse"
+import { useEffect, useState } from "react";
+import { getAPI, IEventsType, IResType, URL_IMAGINARIUM } from "../../API/APIGet";
+import { LogoBLotr } from "../Logo/LogoBLotr";
+import { LogoPublishingHouse } from "../Logo/LogoPublishingHouse";
 
 import "./Events.css"
 
@@ -9,7 +9,7 @@ const Events = () => {
     const [events, setEvents] = useState<IEventsType[]>([])
 
     const action = (res: IResType) => {
-        const response = res.story.content
+        const response = res.story.content;
         setEvents(response.events)
     }
 
