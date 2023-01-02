@@ -20,9 +20,9 @@ const Media = () => {
             <a href={`${one.source}`} key={one.id} className="media__link">
                 <div className="media__icon">
                     <div className="media__icon-img">
-                    <img src={one.filename} alt={one.filename}/>   
+                        <img className="media__icon-view"src={one.filename} alt={one.filename} />
                     </div>
-                    <p>{one.title}</p>
+                    <p className="media__icon-title">{one.title}</p>
                 </div>
             </a>
         )

@@ -1,13 +1,15 @@
 body {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   display: flex;
   font-family: 'Mulish', sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background:rgb(29, 29, 128); */
+  background:rgb(29, 29, 128);
   color: white;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 code {
@@ -15,7 +17,7 @@ code {
     monospace;
 }
 
-.media {
+/* .media {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
@@ -31,4 +33,4 @@ code {
 
 .banner {
   border-radius: 20px;
-}
+} */

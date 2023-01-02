@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import { getAPI, IEventsType, IResType, URL_IMAGINARIUM } from "../../API/APIGet"
+import { LogoPublishingHouse } from "../Logo/LogoPublishingHouse"
+
 import "./Events.css"
 
 const Events = () => {
@@ -17,13 +19,17 @@ const Events = () => {
     const allEvents = events.map(event => {
         return (
             <div key={event.id} className="event">
-                <img src={event.filename} alt={event.title} className="event__img"/>
+                <img src={event.filename} alt={event.title} className="event__img" />
                 <p className="event__title">{event.title}</p >
             </div>
         )
     })
     return (
         <div className="events">
+            <div className="events__publishingHouse">
+                <LogoPublishingHouse />
+
+            </div>
             {allEvents}
         </div>
     )

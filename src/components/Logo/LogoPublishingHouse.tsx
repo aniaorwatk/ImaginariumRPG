@@ -1,0 +1,1 @@
+export { ReactComponent as LogoPublishingHouse } from "./../../assets/wydawnictwo.svg"
