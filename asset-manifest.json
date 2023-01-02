@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/ImaginariumRPG/static/css/main.618133a2.css",
-    "main.js": "/ImaginariumRPG/static/js/main.7f667a51.js",
+    "main.css": "/ImaginariumRPG/static/css/main.1e09be8c.css",
+    "main.js": "/ImaginariumRPG/static/js/main.aa98216a.js",
     "static/js/787.bceb0d31.chunk.js": "/ImaginariumRPG/static/js/787.bceb0d31.chunk.js",
+    "static/media/bLotr.svg": "/ImaginariumRPG/static/media/bLotr.c4a903e69af65b0f34a52ef68603f81f.svg",
     "static/media/wydawnictwo.svg": "/ImaginariumRPG/static/media/wydawnictwo.62e139da95979733cd192348eee1b181.svg",
     "static/media/patronite.svg": "/ImaginariumRPG/static/media/patronite.eb70caea510f5437fcdd206edc71088d.svg",
     "index.html": "/ImaginariumRPG/index.html",
-    "main.618133a2.css.map": "/ImaginariumRPG/static/css/main.618133a2.css.map",
-    "main.7f667a51.js.map": "/ImaginariumRPG/static/js/main.7f667a51.js.map",
+    "main.1e09be8c.css.map": "/ImaginariumRPG/static/css/main.1e09be8c.css.map",
+    "main.aa98216a.js.map": "/ImaginariumRPG/static/js/main.aa98216a.js.map",
     "787.bceb0d31.chunk.js.map": "/ImaginariumRPG/static/js/787.bceb0d31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.618133a2.css",
-    "static/js/main.7f667a51.js"
+    "static/css/main.1e09be8c.css",
+    "static/js/main.aa98216a.js"
   ]
 }
