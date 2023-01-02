@@ -1,0 +1,16 @@
+.patronite {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    width: 342px;
+    height: 66px;
+    border-bottom: 0.75px solid rgba(255, 255, 255, 0.7);
+    border-top: 0.75px solid rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.patronite__email {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}

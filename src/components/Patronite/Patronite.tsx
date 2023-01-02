@@ -16,9 +16,9 @@ const Patronite = () => {
     }, []);
 
     return (
-        <>
-            {patronite?.patronite_email && <><LogoPatronite /><p>{patronite?.patronite_email}</p></>}
-        </>
+        <div className="patronite">
+            {patronite?.patronite_email && <><LogoPatronite /> | <p className="patronite__email">{patronite?.patronite_email}</p></>}
+        </div>
     )
 }
 
