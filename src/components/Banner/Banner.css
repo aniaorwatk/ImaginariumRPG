@@ -1,4 +1,10 @@
 .banner {
-    border-radius: 20px;
-    margin-bottom: 24px;
-  } 
+  border-radius: 23px;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 833px) {
+  .banner {
+    min-width: 467px;
+  }
+}

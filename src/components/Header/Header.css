@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    min-width: 390px;
 }
 
 .header__bogumil {
@@ -39,4 +39,10 @@
     line-height: 20px;
     color: rgba(255, 255, 255, 0.8);
     margin: 0 0 24px 0;
+}
+
+@media only screen and (min-width: 833px) {
+    .header {
+        min-width: 834px;
+    }
 }

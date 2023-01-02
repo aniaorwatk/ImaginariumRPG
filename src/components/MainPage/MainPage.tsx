@@ -11,9 +11,9 @@ const MainPage = () => {
 
   return (
     <div className="App">
-      <Contact/>
       <Header />
       <Patronite />
+      <Contact/>
       <Media />
       <Banner />
       <Events />

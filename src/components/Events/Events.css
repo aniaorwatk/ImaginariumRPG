@@ -48,3 +48,9 @@
     right: -10px;
     top: -35px;
 }
+
+@media only screen and (min-width: 833px) {
+    .header {
+        min-width: 834px;
+    }
+}

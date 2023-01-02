@@ -1,7 +1,7 @@
 .media {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:0 12px;
+    gap: 0 12px;
     width: 342px;
     margin: 20px;
 }
@@ -33,4 +33,25 @@
     font-weight: 400;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (min-width: 833px) {
+    .media {
+        gap: 24px;
+        width: 469px;
+    }
+
+    .media__icon-img{
+        width: 74px;
+        height: 74px;
+    }
+
+    .media__icon-view {
+        width: 54px;
+        height: 54px;
+    }
+
+    .media__icon-title{
+        font-size: 16px;
+    }
 }
