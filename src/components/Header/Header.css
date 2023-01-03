@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 390px;
+    min-width: 100%;
 }
 
 .header__bogumil {
@@ -20,9 +20,17 @@
 }
 
 .header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 91px;
     background: rgb(29, 29, 128);
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.header__logo-bg {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .header__title {
@@ -42,7 +50,39 @@
 }
 
 @media only screen and (min-width: 833px) {
-    .header {
-        min-width: 834px;
+    .header__bogumil {
+        background-image: url("./../../assets/bogumil_love\ _m.svg");
     }
+
+    .header__logo {
+        width: 121px;
+        height: 121px;
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .header_title {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 16px;
+    }
+
+    .header__information {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    .header__logo-bg {
+        background: none;
+    }
+}
+
+@media only screen and (min-width: 1439px) {
+    .header__bogumil {
+        background-image: url("./../../assets/bogumil_love_l.svg");
+    }
+
+   .header__information{
+    color: rgba(255, 255, 255, 0.6);
+   } 
 }

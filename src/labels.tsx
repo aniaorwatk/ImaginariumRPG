@@ -6,6 +6,9 @@ const labels = {
     pageNotFound: {
         infAboutError: "Ups!!! Coś poszło nie tak.",
         pageNotFound: "Strona nie odpowiada.",
+    },
+    contact: {
+        contact: "kontakt"
     }
 }
 

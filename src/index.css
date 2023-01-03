@@ -2,15 +2,22 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* display: flex; */
+  display: flex;
   font-family: 'Mulish', sans-serif;;
   background:rgb(29, 29, 128);
   color: white;
-  min-height: 100vw;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@media only screen and (min-width: 1439px) {
+body{
+  overflow: hidden;
+}
 }

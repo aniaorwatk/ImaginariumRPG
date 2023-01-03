@@ -3,20 +3,24 @@ import Contact from "../Contact/Contact";
 import Events from "../Events/Events";
 import Header from "../Header/Header";
 import Media from "../Media/Media";
-import Patronite from "../Patronite/Patronite";
 import "./../../index.css";
 import "./MainPage.css";
 
 const MainPage = () => {
 
   return (
-    <div className="App">
+    <div className="wrapper">
       <Header />
-      <Patronite />
-      <Contact/>
-      <Media />
-      <Banner />
-      <Events />
+      <main className="wrapper__main">
+        <div className="wrapper__main-right">
+          <div className="wrapper__main-right--media">
+            <Contact />
+            <Media />
+          </div>
+          <Banner />
+        </div>
+        <Events />
+      </main>
     </div>
   );
 }

@@ -29,7 +29,7 @@ const Events = () => {
         <div className="events">
             <LogoBLotr className="events__bogumil" />
             <div className="events__publishingHouse">
-                <LogoPublishingHouse />
+                <LogoPublishingHouse className="events__publishingHouse-img"/>
             </div>
             {allEvents}
         </div>
