@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getAPI, IPatroniteType, IResType, URL_IMAGINARIUM } from "../../API/APIGet";
+import { LogoMail } from "../Logo/LogoMail";
 import { LogoPatronite } from "../Logo/LogoPatronite";
 import "./Patronite.css";
 
@@ -18,7 +19,7 @@ const Patronite = () => {
     return (
         <>
             {patronite?.patronite_email && <div className="patronite">
-                <><LogoPatronite /> | <p className="patronite__email">{patronite?.patronite_email}</p></>
+                <><LogoPatronite className="patronite__logo"/> | <LogoMail className="patronite_logoEmail"/> <p className="patronite__email">{patronite?.patronite_email}</p></>
             </div>}
         </>
     )

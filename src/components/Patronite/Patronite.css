@@ -2,23 +2,48 @@
     display: flex;
     align-items: center;
     justify-content: center;
-     gap: 13px;
+    gap: 13px;
     width: 342px;
     height: 66px;
     border-bottom: 0.75px solid rgba(255, 255, 255, 0.7);
     border-top: 0.75px solid rgba(255, 255, 255, 0.7);
     font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .patronite__email {
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.8);
+}
+
+.patronite_logoEmail {
+    width: 0;
 }
 
 @media only screen and (min-width: 833px) {
-    .patronite{
+    .patronite {
         width: 460px;
         height: 66px;
         margin: 36px 0;
+    }
+}
+
+@media only screen and (min-width: 1439px) {
+    .patronite {
+        width: 912px;
+ 
+    }
+
+    .patronite__logo {
+        width: 167px;
+        height: 53.27px;
+    }
+
+    .patronite__email{
+       font-size: 20px;
+        line-height: 25px;
+    }
+
+    .patronite_logoEmail {
+        width: 24px;
     }
 }

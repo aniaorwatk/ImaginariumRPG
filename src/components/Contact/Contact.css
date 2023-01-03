@@ -26,7 +26,6 @@
     .contact {
         position: static;
         width: 469px;
-        /* padding: 10px 10px 10px 0px; */
         gap: 10px;
         background: #001071;
         border-radius: 16px;
@@ -36,5 +35,17 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
+    }
+}
+
+@media only screen and (min-width: 1439px) {
+    .contact{
+        width: 392px;
+        background: #000839;
+    }
+
+    .contact__img {
+        height: 23px;
+        width: 23px;
     }
 }
