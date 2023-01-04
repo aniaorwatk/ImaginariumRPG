@@ -34,6 +34,11 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
+.media__icon-view{
+    width: 54px;
+        height: 54px;
+}
+
 @media only screen and (min-width: 833px) {
     .media {
         gap: 24px;
