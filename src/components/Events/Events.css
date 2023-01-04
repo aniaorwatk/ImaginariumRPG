@@ -20,9 +20,9 @@
 
 .event__img {
     height: 173px;
-    object-position: center;
-    object-fit: contain;
     border-radius: 8px;
+    object-position: center; 
+    object-fit: cover;
 }
 
 .event__title {

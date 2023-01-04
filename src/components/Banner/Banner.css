@@ -1,4 +1,4 @@
-.banner {
+.bannerImg {
   border-radius: 23px;
   margin-bottom: 24px;
   width: 342px;
@@ -6,13 +6,13 @@
 }
 
 @media only screen and (min-width: 833px) {
-  .banner {
+  .bannerImg {
     width: 467px;
   }
 }
 
 @media only screen and (min-width: 1439px) {
-  .banner {
+  .bannerImg {
     width: 392px;
   }
 }

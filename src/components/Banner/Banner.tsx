@@ -15,7 +15,7 @@ const Banner = () => {
     getAPI(URL_IMAGINARIUM, action)
   }, []);
   return (
-    <img src={banner?.filename} alt="banner" className="banner" />
+    <img src={banner?.filename} alt={banner?.alt}className="bannerImg" />
   )
 }
 

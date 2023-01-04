@@ -19,6 +19,13 @@
     width: 0;
 }
 
+.patronite__link{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
 @media only screen and (min-width: 833px) {
     .patronite {
         width: 460px;
@@ -30,12 +37,12 @@
 @media only screen and (min-width: 1439px) {
     .patronite {
         width: 912px;
- 
     }
 
     .patronite__logo {
         width: 167px;
         height: 53.27px;
+        z-index:2;
     }
 
     .patronite__email{

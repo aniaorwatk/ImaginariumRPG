@@ -11,7 +11,8 @@ export interface IPatroniteType {
   patronite_email: string
 }
 export interface IBannerType {
-  filename: string
+  filename: string,
+  alt:string
 }
 export interface IEventsType {
   id: number,

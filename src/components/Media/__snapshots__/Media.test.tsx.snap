@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Media Should render 1`] = `
+<DocumentFragment>
+  <div
+    class="media"
+  >
+    <a
+      class="media__link"
+      href="www.test1.pl"
+      target="_blank"
+    >
+      <div
+        class="media__icon"
+      >
+        <div
+          class="media__icon-img"
+        >
+          <img
+            alt="test1.jpg"
+            class="media__icon-view"
+            src="test1.jpg"
+          />
+        </div>
+        <p
+          class="media__icon-title"
+        >
+          Discord
+        </p>
+      </div>
+    </a>
+    <a
+      class="media__link"
+      href="www.test2.pl"
+      target="_blank"
+    >
+      <div
+        class="media__icon"
+      >
+        <div
+          class="media__icon-img"
+        >
+          <img
+            alt="test2.jpg"
+            class="media__icon-view"
+            src="test2.jpg"
+          />
+        </div>
+        <p
+          class="media__icon-title"
+        >
+          Twitch
+        </p>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;

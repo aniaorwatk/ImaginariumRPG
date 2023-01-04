@@ -8,6 +8,7 @@ const Media = () => {
 
     const action = (res: IResType) => {
         const response = res.story.content;
+        console.log(res)
         setMedia(response.media)
     }
 
@@ -17,7 +18,7 @@ const Media = () => {
 
     const allMedia = media.map(one => {
         return (
-            <a href={`${one.source}`} key={one.id} className="media__link">
+            <a href={`${one.source}`} target="_blank" key={one.id} className="media__link">
                 <div className="media__icon">
                     <div className="media__icon-img">
                         <img className="media__icon-view"src={one.filename} alt={one.filename} />
