@@ -7,6 +7,8 @@ import "./Patronite.css";
 const Patronite = () => {
     const [patronite, SetPatronite] = useState<IPatroniteType>()
 
+    const linkPatronite = "https://patronite.pl/imaginariumrpg"
+
     const action = (res: IResType) => {
         const response = res.story.content;
         SetPatronite(response)
@@ -20,7 +22,9 @@ const Patronite = () => {
         <div>
             {patronite?.patronite_email && <div className="patronite">
                 <>
+                <a href={linkPatronite} target="_blank">
                     <LogoPatronite className="patronite__logo" />
+                   </a> 
                     |
                     <LogoMail className="patronite_logoEmail" />
                     <p className="patronite__email">{patronite?.patronite_email}</p></>

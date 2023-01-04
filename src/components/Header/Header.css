@@ -77,18 +77,19 @@
 }
 
 @media only screen and (min-width: 1439px) {
-    .header{
+    .header {
         width: 1440px;
     }
+
     .header__bogumil {
         background-image: url("./../../assets/bogumil_love_l.svg");
-    z-index: 1;
-    left: 98.96px;
-    top: 0;
-
+        left: 98.96px;
+        top: 0;
+        width: 420px;
+        z-index: 1;
     }
 
-   .header__information{
-    color: rgba(255, 255, 255, 0.6);
-   } 
+    .header__information {
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
