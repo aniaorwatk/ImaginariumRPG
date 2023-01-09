@@ -15,7 +15,7 @@ const Header = () => {
             </div>
             <h1 className="header__title">{labels.header.title}</h1>
             <p className="header__information">{labels.header.information}</p>
-       <Patronite/>
+            <Patronite />
         </div>
     )
 }

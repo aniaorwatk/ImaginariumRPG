@@ -26,7 +26,7 @@ const Patronite = () => {
                     </a>
                     |
                     <LogoMail className="patronite_logoEmail" />
-                    <p className="patronite__email">{patronite}</p></>
+                    <a href={`mailto:${patronite}`} target="_blank" className="patronite__email">{patronite}</a></>
             </div>
             }
         </div>

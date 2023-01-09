@@ -13,6 +13,9 @@
 
 .patronite__email {
     font-weight: 600;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
 
 .patronite_logoEmail {
