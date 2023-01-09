@@ -1,20 +1,19 @@
 import { useEffect, useState } from "react";
-import { getAPI, IEventsType, IResType, URL_IMAGINARIUM } from "../../API/APIGet";
+import { getAction, IEventType, IDataType, URL_IMAGINARIUM } from "../../API/APIGet";
 import { LogoBLotr } from "../Logo/LogoBLotr";
 import { LogoPublishingHouse } from "../Logo/LogoPublishingHouse";
 
 import "./Events.css"
 
 const Events = () => {
-    const [events, setEvents] = useState<IEventsType[]>([])
+    const [events, setEvents] = useState<IEventType[]>([])
 
-    const action = (res: IResType) => {
-        const response = res.story.content;
-        setEvents(response.events)
+    const action = (data: IDataType) => {
+        setEvents(data.events)
     }
 
     useEffect(() => {
-        getAPI(URL_IMAGINARIUM, action)
+        getAction(URL_IMAGINARIUM, action)
     }, []);
 
     const allEvents = events.map(event => {

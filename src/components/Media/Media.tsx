@@ -1,19 +1,17 @@
 import { useEffect, useState } from "react";
-import { getAPI, IMediaTyp, URL_IMAGINARIUM, IResType } from "../../API/APIGet";
+import { getAction, IMediaType, URL_IMAGINARIUM, IDataType } from "../../API/APIGet";
 import "./Media.css";
 
 const Media = () => {
 
-    const [media, setMedia] = useState<IMediaTyp[]>([])
+    const [media, setMedia] = useState<IMediaType[]>([])
 
-    const action = (res: IResType) => {
-        const response = res.story.content;
-        console.log(res)
-        setMedia(response.media)
+    const action = (data: IDataType) => {
+        setMedia(data.media)
     }
 
     useEffect(() => {
-        return getAPI(URL_IMAGINARIUM, action)
+        return getAction(URL_IMAGINARIUM, action)
     }, []);
 
     const allMedia = media.map(one => {

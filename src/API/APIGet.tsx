@@ -1,41 +1,46 @@
+import { SetStateAction } from "react"
+
 export const URL_IMAGINARIUM = "https://api.storyblok.com/v2/cdn/stories/story?version=draft&token=jE4RYFqUUiAqm8wQBDxiqgtt&cv=1671780619"
 
-export interface IMediaTyp {
+export interface IMediaType {
   title: string,
   filename: string,
   id: number,
-  source: string
+  source?: string,
 }
 
-export interface IPatroniteType {
-  patronite_email: string
-}
 export interface IBannerType {
   filename: string,
-  alt:string
+  alt: string
 }
-export interface IEventsType {
+
+export interface IEventType {
   id: number,
   title: string,
   filename: string
 }
 
-export interface IResType {
-  res: IMediaTyp | IBannerType | IEventsType | IPatroniteType
-  story:any
+export interface IDataType {
+  patronite_email: SetStateAction<string>
+  media: SetStateAction<IMediaType[]>
+  events: SetStateAction<IEventType[]>
+  banner: SetStateAction<IBannerType | undefined>
+  data: IMediaType | IBannerType | IEventType 
 }
 
-export const getAPI = (URL: string, action: (res: IResType) => void,) => {
+export const getAction = (URL: string, action: (data: IDataType) => void) => {
+
   fetch(URL, {
     method: "GET",
   })
     .then((res) => res.json())
     .then((res) => {
-      action(res)
+      const data = res.story.content
+      action(data)
     })
     .catch((err) => {
       if (!(err.status === 200)) {
-        const msg = `Page not found: ${err}`
+        const msg = `Error: ${err}`
         throw alert(msg)
       }
     });
