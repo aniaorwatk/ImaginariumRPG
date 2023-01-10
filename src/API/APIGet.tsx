@@ -25,23 +25,18 @@ export interface IDataType {
   media: SetStateAction<IMediaType[]>
   events: SetStateAction<IEventType[]>
   banner: SetStateAction<IBannerType | undefined>
-  data: IMediaType | IBannerType | IEventType 
+  data: IMediaType | IBannerType | IEventType
+  story: any
 }
 
-export const getAction = (URL: string, action: (data: IDataType) => void) => {
+export async function getAction(URL: string, action: (data: IDataType) => void) {
 
-  fetch(URL, {
-    method: "GET",
-  })
-    .then((res) => res.json())
-    .then((res) => {
-      const data = res.story.content
-      action(data)
-    })
-    .catch((err) => {
-      if (!(err.status === 200)) {
-        const msg = `Error: ${err}`
-        throw alert(msg)
-      }
-    });
+  const res = await fetch(URL)
+  const json = await res.json()
+  const data = json.story.content
+  action(data)
+  if (!(res.status === 200)) {
+    const msg = `Error: ${res}`
+    throw alert(msg)
+  }
 }

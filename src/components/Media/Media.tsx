@@ -11,7 +11,7 @@ const Media = () => {
     }
 
     useEffect(() => {
-        return getAction(URL_IMAGINARIUM, action)
+        getAction(URL_IMAGINARIUM, action)
     }, []);
 
     const allMedia = media.map(one => {
@@ -19,7 +19,7 @@ const Media = () => {
             <a href={`${one.source}`} target="_blank" key={one.id} className="media__link">
                 <div className="media__icon">
                     <div className="media__icon-img">
-                        <img className="media__icon-view"src={one.filename} alt={one.filename} />
+                        <img className="media__icon-view" src={one.filename} alt={one.filename} />
                     </div>
                     <p className="media__icon-title">{one.title}</p>
                 </div>
@@ -28,9 +28,11 @@ const Media = () => {
     })
 
     return (
-        <div className="media">
-            {allMedia}
-        </div>
+        <>
+            {media && <div className="media">
+                {allMedia}
+            </div>}
+        </>
     )
 }
 

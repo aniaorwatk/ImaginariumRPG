@@ -19,7 +19,7 @@ const Patronite = () => {
 
     return (
         <div>
-            {patronite && <div className="patronite">
+            {patronite ? <div className="patronite">
                 <>
                     <a href={linkPatronite} target="_blank">
                         <LogoPatronite className="patronite__logo" />
@@ -28,7 +28,10 @@ const Patronite = () => {
                     <LogoMail className="patronite_logoEmail" />
                     <a href={`mailto:${patronite}`} target="_blank" className="patronite__email">{patronite}</a></>
             </div>
+            :
+            <p>Loading...</p>
             }
+
         </div>
     )
 }

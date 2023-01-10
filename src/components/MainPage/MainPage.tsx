@@ -7,6 +7,8 @@ import "./../../index.css";
 import "./MainPage.css";
 
 const MainPage = () => {
+
+  
   return (
     <div className="wrapper">
       <Header />
