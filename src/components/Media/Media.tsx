@@ -6,13 +6,11 @@ const Media = () => {
 
     const [media, setMedia] = useState<IMediaType[]>([])
 
-    const action = (data: IDataType) => {
-        setMedia(data.media)
-    }
-
     useEffect(() => {
-        getAction(URL_IMAGINARIUM, action)
-    }, []);
+        getAction(URL_IMAGINARIUM, (data: IDataType) => {
+            setMedia(data.media)
+            })
+    }, [media]);
 
     const allMedia = media.map(one => {
         return (

@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { getAction, IDataType, URL_IMAGINARIUM } from "../../API/APIGet";
+import { linkPatronite } from "../../links";
 import { LogoMail } from "../Logo/LogoMail";
 import { LogoPatronite } from "../Logo/LogoPatronite";
 import "./Patronite.css";
 
 const Patronite = () => {
     const [patronite, SetPatronite] = useState("")
-
-    const linkPatronite = "https://patronite.pl/imaginariumrpg"
 
     const action = (data: IDataType) => {
         SetPatronite(data.patronite_email)
@@ -16,6 +15,12 @@ const Patronite = () => {
     useEffect(() => {
         getAction(URL_IMAGINARIUM, action)
     }, []);
+
+    useEffect(() => {
+        getAction(URL_IMAGINARIUM, (data: IDataType) => {
+            SetPatronite(data.patronite_email)
+        })
+    }, [patronite]);
 
     return (
         <div>
@@ -26,12 +31,12 @@ const Patronite = () => {
                     </a>
                     |
                     <LogoMail className="patronite_logoEmail" />
-                    <a href={`mailto:${patronite}`} target="_blank" className="patronite__email">{patronite}</a></>
+                    <a href={`mailto:${patronite}`} target="_blank" className="patronite__email">{patronite}</a>
+                </>
             </div>
-            :
-            <p>Loading...</p>
+                :
+                <p>Loading...</p>
             }
-
         </div>
     )
 }

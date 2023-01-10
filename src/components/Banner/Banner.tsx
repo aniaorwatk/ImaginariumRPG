@@ -6,19 +6,17 @@ const Banner = () => {
 
   const [banner, setBanner] = useState<IBannerType>()
 
-  const action = (data: IDataType) => {
-    setBanner(data.banner)
-  }
-
   useEffect(() => {
-getAction(URL_IMAGINARIUM, action)
+    getAction(URL_IMAGINARIUM, (data: IDataType) => {
+      setBanner(data.banner)
+    })
+  }, [banner]);
 
-  }, []);
   return (
     <>
- { banner && <img src={banner?.filename} alt={banner?.alt} className="bannerImg" />}
-  </>
- )
+      {banner && <img src={banner?.filename} alt={banner?.alt} className="bannerImg" />}
+    </>
+  )
 }
 
 export default Banner

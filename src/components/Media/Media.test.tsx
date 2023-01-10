@@ -2,7 +2,7 @@ import { screen, render } from "@testing-library/react";
 import { unmountComponentAtNode } from "react-dom";
 import Media from "./Media";
 
-describe('Media', () => {
+describe('Media Component', () => {
     let container: any = null;
 
     beforeEach(() => {
@@ -24,7 +24,7 @@ describe('Media', () => {
         expect(asFragment()).toMatchSnapshot();
     })
 
-    it('Should have two events', async () => {
+    it('Should display have two events', async () => {
         render(<Media />, container);
 
         const event1 = await screen.findAllByText('Discord');

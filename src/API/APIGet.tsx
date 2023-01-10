@@ -26,7 +26,6 @@ export interface IDataType {
   events: SetStateAction<IEventType[]>
   banner: SetStateAction<IBannerType | undefined>
   data: IMediaType | IBannerType | IEventType
-  story: any
 }
 
 export async function getAction(URL: string, action: (data: IDataType) => void) {

@@ -2,7 +2,7 @@ import { screen, render } from "@testing-library/react";
 import { unmountComponentAtNode } from "react-dom";
 import Events from "./Events";
 
-describe('Events', () => {
+describe('Events Component', () => {
     let container: any = null;
 
     beforeEach(() => {
@@ -24,7 +24,7 @@ describe('Events', () => {
         expect(asFragment()).toMatchSnapshot();
     })
 
-    it('Should have two events', async () => {
+    it('Should display have two events', async () => {
         render(<Events />, container);
 
         const event1 = await screen.findAllByText('Title 1');

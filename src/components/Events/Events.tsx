@@ -7,13 +7,11 @@ import "./Events.css"
 const Events = () => {
     const [events, setEvents] = useState<IEventType[]>([])
 
-    const action = (data: IDataType) => {
-        setEvents(data.events)
-    }
-
     useEffect(() => {
-        getAction(URL_IMAGINARIUM, action)
-    }, []);
+        getAction(URL_IMAGINARIUM, (data: IDataType) => {
+            setEvents(data.events)
+            })
+    }, [events]);
 
     const allEvents = events.map(event => {
         return (
