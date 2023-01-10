@@ -10,11 +10,13 @@
 .header__bogumil {
     position: absolute;
     content: "";
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("./../../assets/bogumil_love_s.svg");
+    width: 280px;
+    height: 264.85px;
+    left: -74.92px;
+    top: -30px;
+    transform: rotate(44.58deg);
+    background-image: url("./../../assets/bogumil_in_love.png");
+    background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
 }
@@ -50,7 +52,10 @@
 
 @media only screen and (min-width: 833px) {
     .header__bogumil {
-        background-image: url("./../../assets/bogumil_love\ _m.svg");
+        width: 407px;
+        height: 384.98px;
+        left: -67.77px;
+        top: -66px;
     }
 
     .header__logo {
@@ -82,10 +87,11 @@
     }
 
     .header__bogumil {
-        background-image: url("./../../assets/bogumil_love_l.svg");
-        left: 98.96px;
-        top: 0;
-        width: 420px;
+        width: 480px;
+        height: 470.17px;
+        left: 83px;
+        top: -46px;
+        transform: rotate(-179.28deg);
         z-index: 1;
     }
 
