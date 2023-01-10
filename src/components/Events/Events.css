@@ -8,6 +8,7 @@
     background-color: rgba(59, 61, 81, 0.3);
     border-radius: 8px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.07));
+    overflow: hidden;
 }
 
 .event {
@@ -19,6 +20,7 @@
 }
 
 .event__img {
+    width: 156px;
     height: 173px;
     border-radius: 8px;
     object-position: center; 
@@ -45,7 +47,7 @@
 }
 
 .events__bogumil {
-    z-index: -1;
+    z-index: 1;
     position: absolute;
     content: "";
     right: -10px;
@@ -74,15 +76,12 @@
     }
 
     .events__bogumil {
-        z-index: 1;
         height: 230px;
         width: 190px;
         right: -49px;
     }
 
     .events__publishingHouse {
-        width: 219px;
-        height: 46px;
         left: 16px;
         top:20px;
     }
