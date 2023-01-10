@@ -10,7 +10,7 @@ const Events = () => {
     useEffect(() => {
         getAction(URL_IMAGINARIUM, (data: IDataType) => {
             setEvents(data.events)
-            })
+        })
     }, [events]);
 
     const allEvents = events.map(event => {
@@ -22,15 +22,18 @@ const Events = () => {
         )
     })
     return (
-        
-      events && <div className="events">
+
+        events &&
+        <div className="eventsBox">
             <LogoBLotr className="events__bogumil" />
             <div className="events__publishingHouse">
-                <LogoPublishingHouse className="events__publishingHouse-img"/>
+                <LogoPublishingHouse className="events__publishingHouse-img" />
             </div>
-            {allEvents}
+            <div className="events">
+                {allEvents}
+            </div>
         </div>
-     
+
     )
 }
 
