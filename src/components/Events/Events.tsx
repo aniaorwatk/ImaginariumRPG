@@ -6,12 +6,12 @@ import arrowIcon from "./../../assets/arrow_icon.svg";
 import "./Events.css";
 
 const Events = () => {
-    const scrl = useRef<HTMLDivElement>({});
+    const divEvents = useRef<HTMLDivElement>({});
 
     const [events, setEvents] = useState<IEventType[]>([])
     const [arrow, setArrow] = useState(false)
-    const [scrollX, setscrollX] = useState(0)
-    const [scrolEnd, setscrolEnd] = useState(false)
+    const [scrollX, setScrollX] = useState(0)
+    const [scrollEnd, setScrollEnd] = useState(false)
 
     useEffect(() => {
         getAction(URL_IMAGINARIUM, (data: IDataType) => {
@@ -42,17 +42,17 @@ const Events = () => {
 
     const slide = (shift: number) => {
 
-        scrl.current.scrollLeft += shift;
+        divEvents.current.scrollLeft += shift;
 
-        setscrollX(scrollX + shift);
+        setScrollX(scrollX + shift);
 
         if (
-            Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
-            scrl.current.offsetWidth
+            Math.floor(divEvents.current.scrollWidth - divEvents.current.scrollLeft) <=
+            divEvents.current.offsetWidth
         ) {
-            setscrolEnd(true);
+            setScrollEnd(true);
         } else {
-            setscrolEnd(false);
+            setScrollEnd(false);
         }
     };
 
@@ -61,14 +61,14 @@ const Events = () => {
     }, [scrollX])
 
     const scrollCheck = () => {
-        setscrollX(scrl.current.scrollLeft);
+        setScrollX(divEvents.current.scrollLeft);
         if (
-            Math.floor(scrl.current.scrollWidth - scrl.current.scrollLeft) <=
-            scrl.current.offsetWidth
+            Math.floor(divEvents.current.scrollWidth - divEvents.current.scrollLeft) <=
+            divEvents.current.offsetWidth
         ) {
-            setscrolEnd(true);
+            setScrollEnd(true);
         } else {
-            setscrolEnd(false);
+            setScrollEnd(false);
         }
     };
 
@@ -80,13 +80,13 @@ const Events = () => {
             <div className="events__publishingHouse">
                 <LogoPublishingHouse className="events__publishingHouse-img" />
             </div>
-            {!scrolEnd &&
+            {!scrollEnd &&
                 <img src={arrowIcon} alt="arrow right" className={`events__scroll arrowRight   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(+150)} onTouchMove={() => slide(+150)} />
             }
             {scrollX !== 0 &&
                 <img src={arrowIcon} alt="arrow left" className={`events__scroll arrowLeft   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(-150)} onTouchMove={() => slide(-150)} />
             }
-            <div className="events" ref={scrl} onScroll={scrollCheck}  >
+            <div className="events" ref={divEvents} onScroll={scrollCheck}  >
 
                 {allEvents}
             </div>
