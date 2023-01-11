@@ -6,19 +6,11 @@ import { LogoPatronite } from "../Logo/LogoPatronite";
 import "./Patronite.css";
 
 const Patronite = () => {
-    const [patronite, SetPatronite] = useState("")
-
-    const action = (data: IDataType) => {
-        SetPatronite(data.patronite_email)
-    }
-
-    useEffect(() => {
-        getAction(URL_IMAGINARIUM, action)
-    }, []);
+    const [patronite, setPatronite] = useState("")
 
     useEffect(() => {
         getAction(URL_IMAGINARIUM, (data: IDataType) => {
-            SetPatronite(data.patronite_email)
+            setPatronite(data.patronite_email)
         })
     }, [patronite]);
 

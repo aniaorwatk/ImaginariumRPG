@@ -53,35 +53,15 @@
     align-items: center;
     padding: 8px 12px;
     background: rgba(59, 61, 81, 0.6);
-    border-radius: 8px;
+    border-radius: 8px; 
+    z-index: 2;
 }
 
 .events__bogumil {
-    z-index: 2;
+   z-index: 2;
     position: absolute;
     right: -10px;
     top: -35px;
-}
-
-.events__scroll {
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    width: 54px;
-    opacity: 0;
-}
-
-.arrowRight {
-    right: 0;
-}
-
-.arrowLeft {
-    transform: rotate(180deg);
-    left: 0;
-}
-
-.arrowSee {
-    opacity: 1;
 }
 
 @media only screen and (min-width: 833px) {
