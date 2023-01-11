@@ -1,0 +1,1 @@
+export const linkPatronite = "https://patronite.pl/imaginariumrpg";

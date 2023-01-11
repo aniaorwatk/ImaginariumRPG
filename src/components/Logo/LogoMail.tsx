@@ -1,0 +1,1 @@
+export {ReactComponent as LogoMail} from "./../../assets/mail.svg"

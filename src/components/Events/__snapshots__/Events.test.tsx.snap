@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Events Should render 1`] = `
+<DocumentFragment>
+  <div
+    class="events"
+  >
+    <svg
+      class="events__bogumil"
+    >
+      bLotr.svg
+    </svg>
+    <div
+      class="events__publishingHouse"
+    >
+      <svg
+        class="events__publishingHouse-img"
+      >
+        wydawnictwo.svg
+      </svg>
+    </div>
+    <div
+      class="event"
+    >
+      <img
+        alt="Title 1"
+        class="event__img"
+        src="test1.jpg"
+      />
+      <p
+        class="event__title"
+      >
+        Title 1
+      </p>
+    </div>
+    <div
+      class="event"
+    >
+      <img
+        alt="Title 2"
+        class="event__img"
+        src="test2.jpg"
+      />
+      <p
+        class="event__title"
+      >
+        Title 2
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
