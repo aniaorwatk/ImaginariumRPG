@@ -1,6 +1,7 @@
 .eventsBox {
     position: relative;
     overflow: hidden;
+    padding-top: 40px;
 }
 
 .events {
@@ -12,13 +13,22 @@
     background-color: rgba(59, 61, 81, 0.3);
     border-radius: 8px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.07));
-    overflow-x: scroll;
     overflow-y: hidden;
     cursor: pointer;
 }
 
 .events::-webkit-scrollbar{
-    width: 0px;
+    height:  6px;
+}
+
+.events::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.events::-webkit-scrollbar-thumb{
+    background-color: rgba(64, 67, 98, 0.3);
+    border-radius: 8px;
 }
 
 .event {
@@ -64,6 +74,27 @@
     top: -35px;
 }
 
+.events__scroll {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 54px;
+    opacity: 0;
+}
+
+.arrowRight {
+    right: 0;
+}
+
+.arrowLeft {
+    transform: rotate(180deg);
+    left: 0;
+}
+
+.arrowShow {
+    opacity: 1;
+}  
+
 @media only screen and (min-width: 833px) {
     .events {
         padding: 90px 16px 12px 16px;
@@ -104,6 +135,7 @@
     }
 }
 
+      
 @media only screen and (min-width: 1439px) {
     .events {
         width: 444px;
@@ -123,7 +155,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
     .events__bogumil {
