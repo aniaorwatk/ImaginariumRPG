@@ -24,17 +24,24 @@ const Events = () => {
         )
     })
 
-    const handleArrow = () => {
+    const showArrow = () => {
         return (
-            setArrow(prevArrow => !prevArrow)
+            setArrow(prevArrow => true)
         )
     }
+
+    const hiddenArrow = () => {
+        return (
+            setArrow(prevArrow => false)
+        )
+    }
+
 
 
     return (
 
         events &&
-        <div className="eventsBox" onMouseEnter={() => handleArrow()} onMouseLeave={() => handleArrow()} >
+        <div className="eventsBox" onMouseEnter={() => showArrow()} onMouseLeave={() => hiddenArrow()} onTouchMove={() => showArrow()} onTouchEnd={() => hiddenArrow()}>
             <LogoBLotr className="events__bogumil" />
             <div className="events__publishingHouse">
                 <LogoPublishingHouse className="events__publishingHouse-img" />
