@@ -9,7 +9,7 @@ const Media = () => {
     useEffect(() => {
         getAction(URL_IMAGINARIUM, (data: IDataType) => {
             setMedia(data.media)
-            })
+        })
     }, [media]);
 
     const allMedia = media.map(one => {
@@ -26,11 +26,9 @@ const Media = () => {
     })
 
     return (
-        <>
-            {media && <div className="media">
-                {allMedia}
-            </div>}
-        </>
+        media && <div className="media">
+            {allMedia}
+        </div>
     )
 }
 

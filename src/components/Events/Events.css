@@ -1,32 +1,37 @@
-.eventsBox {
+.publicationsBox {
     position: relative;
+    display: flex;
+   flex-direction: column;
     overflow: hidden;
+    height: 569px;
     padding-top: 40px;
+    background-color: rgba(59, 61, 81, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.07));
 }
 
-.events {
+.publications {
     display: flex;
     flex-wrap: nowrap;
-    padding: 80px 14px 0 14px;
+    /* padding: 80px 14px 0 14px; */
     gap: 10px;
     width: 317px;
-    background-color: rgba(59, 61, 81, 0.3);
+    
     border-radius: 8px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.07));
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.07)); */
     overflow-y: hidden;
     cursor: pointer;
 }
 
-.events::-webkit-scrollbar{
+.publications::-webkit-scrollbar{
     height:  6px;
 }
 
-.events::-webkit-scrollbar-track{
+.publications::-webkit-scrollbar-track{
     background-color: transparent;
     border-radius: 8px;
 }
 
-.events::-webkit-scrollbar-thumb{
+.publications::-webkit-scrollbar-thumb{
     background-color: rgba(64, 67, 98, 0.3);
     border-radius: 8px;
 }
@@ -54,7 +59,7 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
-.events__publishingHouse {
+.publications__publishingHouse {
     position: absolute;
     top: 20px;
     left: 14px;
@@ -67,14 +72,14 @@
     z-index: 2;
 }
 
-.events__bogumil {
+.publications__bogumil {
    z-index: 2;
     position: absolute;
     right: -10px;
     top: -35px;
 }
 
-.events__scroll {
+.publications__scroll {
     position: absolute;
     z-index: 1;
     height: 100%;
@@ -96,8 +101,8 @@
 }  
 
 @media only screen and (min-width: 833px) {
-    .events {
-        padding: 90px 16px 12px 16px;
+    .publications {
+        /* padding: 90px 16px 12px 16px; */
         background: rgba(81, 81, 81, 0.2);
         border-radius: 16px;
         width: 444px;
@@ -114,18 +119,18 @@
         gap: 8px;
     }
 
-    .events__bogumil {
+    .publications__bogumil {
         height: 230px;
         width: 190px;
         right: -49px;
     }
 
-    .events__publishingHouse {
+    .publications__publishingHouse {
         left: 16px;
         top: 20px;
     }
 
-    .events__publishingHouse-img {
+    .publications__publishingHouse-img {
         width: 195px;
         height: 30px;
     }
@@ -137,7 +142,7 @@
 
       
 @media only screen and (min-width: 1439px) {
-    .events {
+    .publications {
         width: 444px;
         gap: 27px;
     }
@@ -158,7 +163,7 @@
         margin-bottom: 0px;
     }
 
-    .events__bogumil {
+    .publications__bogumil {
         height: 255px;
         width: 215px;
     }

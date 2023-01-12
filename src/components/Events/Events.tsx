@@ -1,17 +1,19 @@
-import { createRef, HTMLAttributes, useEffect, useRef, useState } from "react";
-import { getAction, IEventType, IDataType, URL_IMAGINARIUM } from "../../API/APIGet";
-import { LogoBLotr } from "../Logo/LogoBLotr";
-import { LogoPublishingHouse } from "../Logo/LogoPublishingHouse";
+import { useEffect, useRef, useState } from "react";
+import { getAction, IEventType, IDataType, URL_IMAGINARIUM} from "../../API/APIGet";
+import NewPublication from "./NewPublication/NewPublication";
+import { LogoBLotr } from "../Logos/LogoBLotr";
+import { LogoPublishingHouse } from "../Logos/LogoPublishingHouse";
 import arrowIcon from "./../../assets/arrow_icon.svg";
 import "./Events.css";
 
-const Events = () => {
-    const divEvents = useRef<HTMLDivElement>({});
+const Events =  () => {
+    const sectionPublications = useRef<HTMLDivElement>({});
 
     const [events, setEvents] = useState<IEventType[]>([])
     const [arrow, setArrow] = useState(false)
     const [scrollX, setScrollX] = useState(0)
     const [scrollEnd, setScrollEnd] = useState(false)
+
 
     useEffect(() => {
         getAction(URL_IMAGINARIUM, (data: IDataType) => {
@@ -42,13 +44,25 @@ const Events = () => {
 
     const slide = (shift: number) => {
 
-        divEvents.current.scrollLeft += shift;
+        sectionPublications.current.scrollLeft += shift;
 
         setScrollX(scrollX + shift);
 
         if (
-            Math.floor(divEvents.current.scrollWidth - divEvents.current.scrollLeft) <=
-            divEvents.current.offsetWidth
+            Math.floor(sectionPublications.current.scrollWidth - sectionPublications.current.scrollLeft) <=
+            sectionPublications.current.offsetWidth
+        ) {
+            setScrollEnd(true);
+        } else {
+            setScrollEnd(false);
+        }
+    };
+
+      const scrollCheck = () => {
+        setScrollX(sectionPublications.current.scrollLeft);
+        if (
+            Math.floor(sectionPublications.current.scrollWidth - sectionPublications.current.scrollLeft) <=
+            sectionPublications.current.offsetWidth
         ) {
             setScrollEnd(true);
         } else {
@@ -60,37 +74,28 @@ const Events = () => {
         console.log(scrollX)
     }, [scrollX])
 
-    const scrollCheck = () => {
-        setScrollX(divEvents.current.scrollLeft);
-        if (
-            Math.floor(divEvents.current.scrollWidth - divEvents.current.scrollLeft) <=
-            divEvents.current.offsetWidth
-        ) {
-            setScrollEnd(true);
-        } else {
-            setScrollEnd(false);
-        }
-    };
+
 
     return (
 
         events &&
-        <div className="eventsBox" onMouseEnter={() => showArrow()} onMouseLeave={() => hiddenArrow()} onTouchMove={() => showArrow()} onTouchEnd={() => hiddenArrow()}>
-            <LogoBLotr className="events__bogumil" />
-            <div className="events__publishingHouse">
-                <LogoPublishingHouse className="events__publishingHouse-img" />
+        <section className="publicationsBox" onMouseEnter={() => showArrow()} onMouseLeave={() => hiddenArrow()} onTouchMove={() => showArrow()} onTouchEnd={() => hiddenArrow()}>
+        <NewPublication/>    
+            <LogoBLotr className="publications__bogumil" />
+            <div className="publications__publishingHouse">
+                <LogoPublishingHouse className="publications__publishingHouse-img" />
             </div>
             {!scrollEnd &&
-                <img src={arrowIcon} alt="arrow right" className={`events__scroll arrowRight   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(+150)} onTouchMove={() => slide(+150)} />
+                <img src={arrowIcon} alt="arrow right" className={`publications__scroll arrowRight   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(+150)} onTouchMove={() => slide(+150)} />
             }
             {scrollX !== 0 &&
-                <img src={arrowIcon} alt="arrow left" className={`events__scroll arrowLeft   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(-150)} onTouchMove={() => slide(-150)} />
+                <img src={arrowIcon} alt="arrow left" className={`publications__scroll arrowLeft   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(-150)} onTouchMove={() => slide(-150)} />
             }
-            <div className="events" ref={divEvents} onScroll={scrollCheck}  >
+            <div className="publications" ref={sectionPublications} onScroll={scrollCheck}  >
 
                 {allEvents}
             </div>
-        </div>
+        </section>
     )
 }
 

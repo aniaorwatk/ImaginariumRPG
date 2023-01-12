@@ -1,6 +1,6 @@
-import { SetStateAction } from "react"
+import { SetStateAction } from "react";
 
-export const URL_IMAGINARIUM = "https://api.storyblok.com/v2/cdn/stories/story?version=draft&token=jE4RYFqUUiAqm8wQBDxiqgtt&cv=1671780619"
+export const URL_IMAGINARIUM = "https://api.storyblok.com/v2/cdn/stories/story?version=draft&token=jE4RYFqUUiAqm8wQBDxiqgtt&cv=1671780619";
 
 export interface IMediaType {
   title: string,
@@ -12,6 +12,12 @@ export interface IMediaType {
 export interface IBannerType {
   filename: string,
   alt: string
+}
+export interface INewPublicationType {
+  title: string,
+  filename: string,
+  alt: string,
+  source?: string
 }
 
 export interface IEventType {
@@ -25,7 +31,8 @@ export interface IDataType {
   media: SetStateAction<IMediaType[]>
   events: SetStateAction<IEventType[]>
   banner: SetStateAction<IBannerType | undefined>
-  data: IMediaType | IBannerType | IEventType
+  new_publication: SetStateAction<INewPublicationType | undefined>
+  data: IMediaType | IBannerType | IEventType | INewPublicationType
 }
 
 export async function getAction(URL: string, action: (data: IDataType) => void) {

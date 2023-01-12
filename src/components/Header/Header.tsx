@@ -6,7 +6,7 @@ import "./Header.css";
 const Header = () => {
 
     return (
-        <div className="header">
+        <header className="header">
             <div className="header__bogumil"></div>
             <div className="header__logo">
                 <div className="header__logo-bg">
@@ -16,7 +16,7 @@ const Header = () => {
             <h1 className="header__title">{labels.header.title}</h1>
             <p className="header__information">{labels.header.information}</p>
             <Patronite />
-        </div>
+        </header>
     )
 }
 

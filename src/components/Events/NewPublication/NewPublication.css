@@ -1,0 +1,11 @@
+.newPublication__link{
+   position: relative; 
+}
+
+.newPublication__link-icon{
+    position: absolute;
+}
+
+.newPublication__link-img{
+    border-radius: 8px;
+}
