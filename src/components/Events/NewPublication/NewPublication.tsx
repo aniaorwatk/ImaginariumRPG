@@ -18,7 +18,7 @@ const NewPublication = () => {
             {newPublication && <a href={newPublication?.source} target="_blank" className="newPublication__link">
                 <LogoNewPublication className="newPublication__link-icon" />
                 <img src={newPublication?.filename} alt={newPublication?.alt} className="newPublication__link-img" />
-                <p>{newPublication?.title}</p>
+                <p className="newPublication__link-title">{newPublication?.title}</p>
             </a>}
         </section>
     )

@@ -1,19 +1,18 @@
 import { useEffect, useRef, useState } from "react";
-import { getAction, IEventType, IDataType, URL_IMAGINARIUM} from "../../API/APIGet";
+import { getAction, IEventType, IDataType, URL_IMAGINARIUM } from "../../API/APIGet";
 import NewPublication from "./NewPublication/NewPublication";
 import { LogoBLotr } from "../Logos/LogoBLotr";
 import { LogoPublishingHouse } from "../Logos/LogoPublishingHouse";
 import arrowIcon from "./../../assets/arrow_icon.svg";
 import "./Events.css";
 
-const Events =  () => {
+const Events = () => {
     const sectionPublications = useRef<HTMLDivElement>({});
 
     const [events, setEvents] = useState<IEventType[]>([])
     const [arrow, setArrow] = useState(false)
     const [scrollX, setScrollX] = useState(0)
     const [scrollEnd, setScrollEnd] = useState(false)
-
 
     useEffect(() => {
         getAction(URL_IMAGINARIUM, (data: IDataType) => {
@@ -58,7 +57,7 @@ const Events =  () => {
         }
     };
 
-      const scrollCheck = () => {
+    const scrollCheck = () => {
         setScrollX(sectionPublications.current.scrollLeft);
         if (
             Math.floor(sectionPublications.current.scrollWidth - sectionPublications.current.scrollLeft) <=
@@ -74,13 +73,10 @@ const Events =  () => {
         console.log(scrollX)
     }, [scrollX])
 
-
-
     return (
-
         events &&
         <section className="publicationsBox" onMouseEnter={() => showArrow()} onMouseLeave={() => hiddenArrow()} onTouchMove={() => showArrow()} onTouchEnd={() => hiddenArrow()}>
-        <NewPublication/>    
+            <NewPublication />
             <LogoBLotr className="publications__bogumil" />
             <div className="publications__publishingHouse">
                 <LogoPublishingHouse className="publications__publishingHouse-img" />
@@ -92,7 +88,6 @@ const Events =  () => {
                 <img src={arrowIcon} alt="arrow left" className={`publications__scroll arrowLeft   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(-150)} onTouchMove={() => slide(-150)} />
             }
             <div className="publications" ref={sectionPublications} onScroll={scrollCheck}  >
-
                 {allEvents}
             </div>
         </section>

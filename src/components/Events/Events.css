@@ -1,10 +1,12 @@
 .publicationsBox {
     position: relative;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
     overflow: hidden;
-    height: 569px;
-    padding-top: 40px;
+    box-sizing: border-box;
+    padding: 80px 14px 0 14px;
+    border-radius: 8px;
     background-color: rgba(59, 61, 81, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.07));
 }
@@ -12,26 +14,21 @@
 .publications {
     display: flex;
     flex-wrap: nowrap;
-    /* padding: 80px 14px 0 14px; */
     gap: 10px;
     width: 317px;
-    
-    border-radius: 8px;
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.07)); */
     overflow-y: hidden;
-    cursor: pointer;
 }
 
-.publications::-webkit-scrollbar{
-    height:  6px;
+.publications::-webkit-scrollbar {
+    height: 6px;
 }
 
-.publications::-webkit-scrollbar-track{
+.publications::-webkit-scrollbar-track {
     background-color: transparent;
     border-radius: 8px;
 }
 
-.publications::-webkit-scrollbar-thumb{
+.publications::-webkit-scrollbar-thumb {
     background-color: rgba(64, 67, 98, 0.3);
     border-radius: 8px;
 }
@@ -68,12 +65,12 @@
     align-items: center;
     padding: 8px 12px;
     background: rgba(59, 61, 81, 0.6);
-    border-radius: 8px; 
+    border-radius: 8px;
     z-index: 2;
 }
 
 .publications__bogumil {
-   z-index: 2;
+    z-index: 2;
     position: absolute;
     right: -10px;
     top: -35px;
@@ -81,32 +78,38 @@
 
 .publications__scroll {
     position: absolute;
+    bottom: 0;
     z-index: 1;
-    height: 100%;
+
     width: 54px;
     opacity: 0;
 }
 
 .arrowRight {
     right: 0;
+    bottom: 0;
 }
 
 .arrowLeft {
     transform: rotate(180deg);
     left: 0;
+    bottom: 0;
 }
 
 .arrowShow {
     opacity: 1;
-}  
+}
 
 @media only screen and (min-width: 833px) {
-    .publications {
-        /* padding: 90px 16px 12px 16px; */
-        background: rgba(81, 81, 81, 0.2);
+    .publicationsBox {
+        width: 467px;
+        padding: 90px 16px 0px 16px;
         border-radius: 16px;
-        width: 444px;
-        gap: 27px;
+        background: rgba(81, 81, 81, 0.2);
+    }
+
+    .publications {
+        width: 433px;
     }
 
     .event {
@@ -140,10 +143,8 @@
     }
 }
 
-      
 @media only screen and (min-width: 1439px) {
     .publications {
-        width: 444px;
         gap: 27px;
     }
 

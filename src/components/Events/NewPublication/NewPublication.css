@@ -1,3 +1,6 @@
+.newPublication{
+    margin-bottom: 14px;
+}
 .newPublication__link{
    position: relative; 
 }
@@ -7,5 +10,31 @@
 }
 
 .newPublication__link-img{
+    height:100px;
+    width: 317px;
+   object-fit: cover;
     border-radius: 8px;
+}
+.newPublication__link-title{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (min-width: 833px) {
+    .newPublication__link-img{
+        width: 433px;
+        height:100px;
+    }
+}
+
+@media only screen and (min-width: 1439px) {
+    .newPublication__link-title{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
 }
