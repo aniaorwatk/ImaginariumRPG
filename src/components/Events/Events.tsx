@@ -7,7 +7,7 @@ import arrowIcon from "./../../assets/arrow_icon.svg";
 import "./Events.css";
 
 const Events = () => {
-    const sectionPublications = useRef<HTMLDivElement>({});
+    const sectionPublications = useRef <HTMLDivElement>(null!);
 
     const [events, setEvents] = useState<IEventType[]>([])
     const [arrow, setArrow] = useState(false)
