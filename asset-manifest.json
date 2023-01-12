@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/ImaginariumRPG/static/css/main.2b429258.css",
-    "main.js": "/ImaginariumRPG/static/js/main.3a42f3d8.js",
+    "main.css": "/ImaginariumRPG/static/css/main.41ddb10b.css",
+    "main.js": "/ImaginariumRPG/static/js/main.0dde6925.js",
     "static/js/787.bceb0d31.chunk.js": "/ImaginariumRPG/static/js/787.bceb0d31.chunk.js",
     "static/media/bLotr.svg": "/ImaginariumRPG/static/media/bLotr.c4a903e69af65b0f34a52ef68603f81f.svg",
     "static/media/bogumil_in_love.png": "/ImaginariumRPG/static/media/bogumil_in_love.4867de97124dc32f917f.png",
     "static/media/white_logo.svg": "/ImaginariumRPG/static/media/white_logo.e94be49bc3e2b1ed275fed859008dd85.svg",
+    "static/media/new.svg": "/ImaginariumRPG/static/media/new.523f1c5f5f8898ce5986f86f2064753a.svg",
     "static/media/wydawnictwo.svg": "/ImaginariumRPG/static/media/wydawnictwo.62e139da95979733cd192348eee1b181.svg",
     "static/media/patronite.svg": "/ImaginariumRPG/static/media/patronite.eb70caea510f5437fcdd206edc71088d.svg",
-    "static/media/Group 2.svg": "/ImaginariumRPG/static/media/Group 2.58e8295668d64d2847c38aafa2d8cc5b.svg",
+    "static/media/arrow_icon.svg": "/ImaginariumRPG/static/media/arrow_icon.58e8295668d64d2847c38aafa2d8cc5b.svg",
     "index.html": "/ImaginariumRPG/index.html",
     "static/media/fe_messanger.svg": "/ImaginariumRPG/static/media/fe_messanger.246cc7e08d50db37fa12b48b1093d09c.svg",
     "static/media/mail.svg": "/ImaginariumRPG/static/media/mail.66e8b6141440b6e24c5fb308016111cd.svg",
-    "main.2b429258.css.map": "/ImaginariumRPG/static/css/main.2b429258.css.map",
-    "main.3a42f3d8.js.map": "/ImaginariumRPG/static/js/main.3a42f3d8.js.map",
+    "main.41ddb10b.css.map": "/ImaginariumRPG/static/css/main.41ddb10b.css.map",
+    "main.0dde6925.js.map": "/ImaginariumRPG/static/js/main.0dde6925.js.map",
     "787.bceb0d31.chunk.js.map": "/ImaginariumRPG/static/js/787.bceb0d31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b429258.css",
-    "static/js/main.3a42f3d8.js"
+    "static/css/main.41ddb10b.css",
+    "static/js/main.0dde6925.js"
   ]
 }
