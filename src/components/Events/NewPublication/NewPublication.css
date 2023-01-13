@@ -8,6 +8,11 @@
 
 .newPublication__link-icon {
     position: absolute;
+    z-index: 1;
+}
+
+.newPublication__link-icon:hover {
+    opacity: 1;
 }
 
 .newPublication__link-img {
