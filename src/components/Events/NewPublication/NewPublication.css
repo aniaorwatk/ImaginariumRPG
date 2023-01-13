@@ -1,21 +1,27 @@
-.newPublication{
+.newPublication {
     margin-bottom: 14px;
 }
-.newPublication__link{
-   position: relative; 
+
+.newPublication__link {
+    position: relative;
 }
 
-.newPublication__link-icon{
+.newPublication__link-icon {
     position: absolute;
 }
 
-.newPublication__link-img{
-    height:100px;
+.newPublication__link-img {
+    height: 100px;
     width: 317px;
-   object-fit: cover;
+    object-fit: cover;
     border-radius: 8px;
 }
-.newPublication__link-title{
+
+.newPublication__link-img:hover{
+    opacity: 0.85;
+}
+
+.newPublication__link-title {
     margin: 0;
     font-weight: 400;
     font-size: 14px;
@@ -24,14 +30,14 @@
 }
 
 @media only screen and (min-width: 833px) {
-    .newPublication__link-img{
+    .newPublication__link-img {
         width: 433px;
-        height:100px;
+        height: 100px;
     }
 }
 
 @media only screen and (min-width: 1439px) {
-    .newPublication__link-title{
+    .newPublication__link-title {
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
