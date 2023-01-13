@@ -77,13 +77,13 @@ const Events = () => {
             <div className="publications__publishingHouse">
                 <LogoPublishingHouse className="publications__publishingHouse-img" />
             </div>
-            {!scrollEnd &&
-                <img src={arrowIcon} alt="arrow right" className={`publications__scroll arrowRight   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(+150)} onTouchMove={() => slide(+150)} />
-            }
-            {scrollX !== 0 &&
-                <img src={arrowIcon} alt="arrow left" className={`publications__scroll arrowLeft   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(-150)} onTouchMove={() => slide(-150)} />
-            }
             <div className="publications__boxWithArrows">
+                {!scrollEnd &&
+                    <img src={arrowIcon} alt="arrow right" className={`publications__scroll arrowRight   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(+150)} onTouchMove={() => slide(+150)} />
+                }
+                {scrollX !== 0 &&
+                    <img src={arrowIcon} alt="arrow left" className={`publications__scroll arrowLeft   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(-150)} onTouchMove={() => slide(-150)} />
+                }
                 <div className="publications" ref={sectionPublications} onScroll={scrollCheck}  >
                     {allEvents}
                 </div>

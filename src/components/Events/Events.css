@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 157px;
+    /* width: 157px; */
     gap: 8px;
 }
 
@@ -82,21 +82,24 @@ position: relative;
 
 .publications__scroll {
     position: absolute;
-    bottom: 0;
-    z-index: 1;
+    object-fit: cover;
+    top: 0;
+    height:173px;
+    
     width: 54px;
+z-index: 1;
     opacity: 0;
 }
 
 .arrowRight {
     right: 0;
-    bottom: 0;
+    /* bottom: 0; */
 }
 
 .arrowLeft {
     transform: rotate(180deg);
     left: 0;
-    bottom: 0;
+    /* bottom: 0; */
 }
 
 .arrowShow {
@@ -144,6 +147,10 @@ position: relative;
     .event__title {
         margin: 0;
     }
+
+    .publications__scroll {
+    height: 213px;
+    }
 }
 
 @media only screen and (min-width: 1439px) {
@@ -171,4 +178,8 @@ position: relative;
         height: 255px;
         width: 215px;
     }
+
+    .publications__scroll {
+        height: 252px;
+        }
 }
