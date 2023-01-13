@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ImaginariumRPG/static/css/main.2605f34c.css",
-    "main.js": "/ImaginariumRPG/static/js/main.a721fff9.js",
+    "main.css": "/ImaginariumRPG/static/css/main.3a2def91.css",
+    "main.js": "/ImaginariumRPG/static/js/main.5eedb392.js",
     "static/js/787.bceb0d31.chunk.js": "/ImaginariumRPG/static/js/787.bceb0d31.chunk.js",
     "static/media/bLotr.svg": "/ImaginariumRPG/static/media/bLotr.c4a903e69af65b0f34a52ef68603f81f.svg",
     "static/media/bogumil_in_love.png": "/ImaginariumRPG/static/media/bogumil_in_love.4867de97124dc32f917f.png",
@@ -13,12 +13,12 @@
     "index.html": "/ImaginariumRPG/index.html",
     "static/media/fe_messanger.svg": "/ImaginariumRPG/static/media/fe_messanger.246cc7e08d50db37fa12b48b1093d09c.svg",
     "static/media/mail.svg": "/ImaginariumRPG/static/media/mail.66e8b6141440b6e24c5fb308016111cd.svg",
-    "main.2605f34c.css.map": "/ImaginariumRPG/static/css/main.2605f34c.css.map",
-    "main.a721fff9.js.map": "/ImaginariumRPG/static/js/main.a721fff9.js.map",
+    "main.3a2def91.css.map": "/ImaginariumRPG/static/css/main.3a2def91.css.map",
+    "main.5eedb392.js.map": "/ImaginariumRPG/static/js/main.5eedb392.js.map",
     "787.bceb0d31.chunk.js.map": "/ImaginariumRPG/static/js/787.bceb0d31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2605f34c.css",
-    "static/js/main.a721fff9.js"
+    "static/css/main.3a2def91.css",
+    "static/js/main.5eedb392.js"
   ]
 }
