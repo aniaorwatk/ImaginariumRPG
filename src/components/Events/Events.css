@@ -14,7 +14,7 @@
 .publications {
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px 0px;
+    column-gap: 10px;
     width: 317px;
     overflow-y: hidden;
 }
@@ -151,7 +151,7 @@
 
 @media only screen and (min-width: 1439px) {
     .publications {
-        gap: 27px;
+        column-gap: 15px;
     }
 
     .event {
@@ -176,6 +176,6 @@
     }
 
     .publications__scroll {
-        height: 252px;
+        height: 257px;
     }
 }
