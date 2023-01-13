@@ -7,7 +7,7 @@ import arrowIcon from "./../../assets/arrow_icon.svg";
 import "./Events.css";
 
 const Events = () => {
-    const sectionPublications = useRef <HTMLDivElement>(null!);
+    const sectionPublications = useRef<HTMLDivElement>(null!);
 
     const [events, setEvents] = useState<IEventType[]>([])
     const [arrow, setArrow] = useState(false)
@@ -69,10 +69,6 @@ const Events = () => {
         }
     };
 
-    useEffect(() => {
-        console.log(scrollX)
-    }, [scrollX])
-
     return (
         events &&
         <section className="publicationsBox" onMouseEnter={() => showArrow()} onMouseLeave={() => hiddenArrow()} onTouchMove={() => showArrow()} onTouchEnd={() => hiddenArrow()}>
@@ -87,8 +83,10 @@ const Events = () => {
             {scrollX !== 0 &&
                 <img src={arrowIcon} alt="arrow left" className={`publications__scroll arrowLeft   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(-150)} onTouchMove={() => slide(-150)} />
             }
-            <div className="publications" ref={sectionPublications} onScroll={scrollCheck}  >
-                {allEvents}
+            <div className="publications__boxWithArrows">
+                <div className="publications" ref={sectionPublications} onScroll={scrollCheck}  >
+                    {allEvents}
+                </div>
             </div>
         </section>
     )

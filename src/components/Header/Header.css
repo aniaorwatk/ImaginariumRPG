@@ -87,8 +87,8 @@
     }
 
     .header__bogumil {
-        width: 480px;
-        height: 470.17px;
+        width: 459px;
+        height: 437.17px;
         left: 83px;
         top: -46px;
         transform: rotate(-179.28deg);
@@ -97,5 +97,9 @@
 
     .header__information {
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    .header__logo {
+margin-top: 56px;
     }
 }
