@@ -71,13 +71,13 @@ const Events = () => {
 
     return (
         events &&
-        <section className="publicationsBox" onMouseEnter={() => showArrow()} onMouseLeave={() => hiddenArrow()} onTouchMove={() => showArrow()} onTouchEnd={() => hiddenArrow()}>
+        <section className="publicationsBox">
             <NewPublication />
             <LogoBLotr className="publications__bogumil" />
             <div className="publications__publishingHouse">
                 <LogoPublishingHouse className="publications__publishingHouse-img" />
             </div>
-            <div className="publications__boxWithArrows">
+            <div className="publications__boxWithArrows" onMouseEnter={() => showArrow()} onMouseLeave={() => hiddenArrow()} onTouchMove={() => showArrow()} onTouchEnd={() => hiddenArrow()}>
                 {!scrollEnd &&
                     <img src={arrowIcon} alt="arrow right" className={`publications__scroll arrowRight   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(+150)} onTouchMove={() => slide(+150)} />
                 }

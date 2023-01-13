@@ -14,7 +14,7 @@
 .publications {
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: 10px 0px;
     width: 317px;
     overflow-y: hidden;
 }
@@ -37,7 +37,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 157px; */
     gap: 8px;
 }
 
@@ -76,30 +75,27 @@
     top: -35px;
 }
 
-.publications__boxWithArrows{
-position: relative;
+.publications__boxWithArrows {
+    position: relative;
 }
 
 .publications__scroll {
     position: absolute;
     object-fit: cover;
     top: 0;
-    height:173px;
-    
+    height: 173px;
     width: 54px;
-z-index: 1;
+    z-index: 1;
     opacity: 0;
 }
 
 .arrowRight {
     right: 0;
-    /* bottom: 0; */
 }
 
 .arrowLeft {
     transform: rotate(180deg);
     left: 0;
-    /* bottom: 0; */
 }
 
 .arrowShow {
@@ -149,7 +145,7 @@ z-index: 1;
     }
 
     .publications__scroll {
-    height: 213px;
+        height: 213px;
     }
 }
 
@@ -181,5 +177,5 @@ z-index: 1;
 
     .publications__scroll {
         height: 252px;
-        }
+    }
 }
