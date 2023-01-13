@@ -29,8 +29,9 @@
 }
 
 .media__icon-img:hover {
-opacity: 0.85;
+    opacity: 0.85;
 }
+
 .media__icon-title {
     font-weight: 400;
     font-size: 12px;

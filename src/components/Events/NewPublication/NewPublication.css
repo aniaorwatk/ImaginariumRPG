@@ -11,10 +11,6 @@
     z-index: 1;
 }
 
-.newPublication__link-icon:hover {
-    opacity: 1;
-}
-
 .newPublication__link-img {
     height: 100px;
     width: 317px;
