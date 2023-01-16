@@ -84,9 +84,9 @@
     object-fit: cover;
     top: 0;
     height: 173px;
-    width: 54px;
+    width: 0px;
     z-index: 1;
-    opacity: 0;
+    /* opacity: 0; */
 }
 
 .arrowRight {
@@ -99,7 +99,7 @@
 }
 
 .arrowShow {
-    opacity: 1;
+    width: 54px;
 }
 
 @media only screen and (min-width: 833px) {
