@@ -24,7 +24,7 @@ const Events = () => {
         return (
             <div key={event.id} className="event">
                 <img src={event.filename} alt={event.title} className="event__img" />
-                <p className="event__title">{event.title}</p >
+                <p className="event__title">{`“${event.title}”`}</p >
             </div>
         )
     })
