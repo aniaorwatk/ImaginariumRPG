@@ -1,3 +1,5 @@
+@import "./../scss/Main";
+
 .bannerImg {
   border-radius: 23px;
   margin-bottom: 24px;
@@ -5,13 +7,13 @@
   height: 100px;
 }
 
-@media only screen and (min-width: 833px) {
+@media only screen and (min-width: $breakpointM) {
   .bannerImg {
     width: 467px;
   }
 }
 
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: $breakpointL) {
   .bannerImg {
     width: 392px;
   }

@@ -1,3 +1,5 @@
+@import "./../scss/Main";
+
 .patronite {
     display: flex;
     align-items: center;
@@ -5,21 +7,21 @@
     gap: 13px;
     width: 342px;
     height: 66px;
-    border-bottom: 0.75px solid rgba(255, 255, 255, 0.7);
-    border-top: 0.75px solid rgba(255, 255, 255, 0.7);
+    border-bottom: $color-white-trans07;
+    border-top: $color-white-trans07;
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
+    color: $color-white-trans08; 
 }
 
 .patronite__email {
     font-weight: 600;
     text-decoration: none;
-    color: white;
+    color: $color-white;
     cursor: pointer;
 }
 
 .patronite__email:hover {
-    color:rgba(255, 255, 255, 0.7);
+    color:$color-white-trans07;
 }
 
 .patronite_logoEmail {
@@ -28,12 +30,12 @@
 
 .patronite__link{
     text-decoration: none;
-    color: white;
-    background-color: blue;
+    color:$color-white;
+    background-color: $color-blue;
     cursor: pointer;
 }
 
-@media only screen and (min-width: 833px) {
+@media only screen and (min-width: $breakpointM) {
     .patronite {
         width: 460px;
         height: 66px;
@@ -41,7 +43,7 @@
     }
 }
 
-@media only screen and (min-width: 1439px) {
+@media only screen and (min-width: $breakpointL) {
     .patronite {
         width: 912px;
     }

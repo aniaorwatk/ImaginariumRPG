@@ -1,0 +1,53 @@
+@import "./../scss/Main";
+
+.contact {
+    position: absolute;
+    content: "";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    right: 24px;
+    top: 57px;
+    height: 52px;
+    width: 52px;
+    background-color: $color-white-trans01;
+    border-radius: 80px;
+
+    &__img {
+        height: 36px;
+        width: 36px;
+    }
+
+    &__text {
+        font-size: 0px;
+    }
+}
+
+@media only screen and (min-width: $breakpointM) {
+    .contact {
+        position: static;
+        width: 469px;
+        gap: 10px;
+        background-color: $color-bg-contactM;
+        border-radius: 16px;
+
+        &__text {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpointL) {
+    .contact {
+        width: 392px;
+        background-color: $color-bg-contactL;
+
+        &__img {
+            height: 23px;
+            width: 23px;
+        }
+    }
+}

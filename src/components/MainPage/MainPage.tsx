@@ -3,8 +3,7 @@ import Contact from "../Contact/Contact";
 import Events from "../Events/Events";
 import Header from "../Header/Header";
 import Media from "../Media/Media";
-import "./../../index.css";
-import "./MainPage.css";
+import "./MainPage.scss";
 
 const MainPage = () => {
 
@@ -20,7 +19,7 @@ const MainPage = () => {
           </div>
           <Banner />
         </div>
-        <Events />
+        {/* <Events /> */}
       </main>
     </div>
   );

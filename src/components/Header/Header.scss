@@ -1,0 +1,110 @@
+@import "./../scss/Main";
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__bogumil {
+        position: absolute;
+        content: "";
+        width: 280px;
+        height: 264.85px;
+        left: -74.92px;
+        top: -30px;
+        transform: rotate(44.58deg);
+        background-image: url("./../../assets/bogumil_in_love.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 91px;
+        background: $color-logo-bg;
+        border-radius: 50%;
+        overflow: hidden;
+
+        &-bg {
+            background: $color-white-trans01;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 8px;
+    }
+
+    &__information {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-white-trans08;
+        margin: 0 0 24px 0;
+    }
+}
+
+@media only screen and (min-width: $breakpointM) {
+
+    .header {
+        &__bogumil {
+            width: 407px;
+            height: 384.98px;
+            left: -67.77px;
+            top: -66px;
+        }
+
+        &__logo {
+            width: 121px;
+            height: 121px;
+            background: $color-white-trans01;
+
+            &--bg {
+                background: none;
+            }
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 45px;
+            margin-bottom: 16px;
+        }
+
+        &__information {
+            font-size: 24px;
+            line-height: 30px;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpointL) {
+    .header {
+        width: 1440px;
+
+        &__bogumil {
+            width: 459px;
+            height: 437.17px;
+            left: 83px;
+            top: -46px;
+            transform: rotate(-179.28deg);
+            z-index: 1;
+        }
+
+        &__information {
+            color: $color-white-trans08;
+        }
+
+        &__logo {
+            margin-top: 56px;
+        }
+    }
+}

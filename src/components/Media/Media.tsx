@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getAction, IMediaType, URL_IMAGINARIUM, IDataType } from "../../API/APIGet";
-import "./Media.css";
+import "./Media.scss";
 
 const Media = () => {
 

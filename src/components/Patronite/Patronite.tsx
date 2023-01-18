@@ -3,7 +3,7 @@ import { getAction, IDataType, URL_IMAGINARIUM } from "../../API/APIGet";
 import { linkPatronite } from "../../links";
 import { LogoMail } from "../Logos/LogoMail";
 import { LogoPatronite } from "../Logos/LogoPatronite";
-import "./Patronite.css";
+import "./Patronite.scss";
 
 const Patronite = () => {
     const [patronite, setPatronite] = useState("")

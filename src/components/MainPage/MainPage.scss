@@ -1,0 +1,43 @@
+@import "./../scss/Main";
+
+.wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-bottom: 10px;
+    background: $color-bg;
+    filter: $color-filter-wrapper;
+
+    &__main-right,
+    &__main,
+    &__main-right--media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1439px) {
+    .wrapper {
+        overflow: hidden;
+
+        &__main {
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 912px;
+        }
+
+        &__main-right {
+            flex-direction: column-reverse;
+        }
+
+        &__main-right--media {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
