@@ -10,7 +10,7 @@ const Header = () => {
             <div className="header__bogumil"></div>
             <div className="header__logo">
                 <div className="header__logo-bg">
-                    <img src={LogoWhite} />
+                    <img src={LogoWhite} alt="Logo Imaginarium" />
                 </div>
             </div>
             <h1 className="header__title">{labels.header.title}</h1>
