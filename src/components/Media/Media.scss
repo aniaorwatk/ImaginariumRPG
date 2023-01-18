@@ -3,11 +3,13 @@
 .media {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0 12px;
+    gap:  12px;
     width: 342px;
     margin: 20px 0;
 
-    &__link {
+
+
+    .mediaLink {
         text-decoration: none;
         color: $color-white;
 
@@ -30,7 +32,7 @@
                     opacity: 0.85;
                 }
 
-                &-view {
+                &--view {
                     width: 40px;
                     height: 40px;
                 }
@@ -43,7 +45,10 @@
             }
         }
     }
+
 }
+
+
 
 @media only screen and (min-width: $breakpointM) {
     .media {
