@@ -1,0 +1,1 @@
+export {ReactComponent as LogoNewPublication} from "./../../assets/new.svg";

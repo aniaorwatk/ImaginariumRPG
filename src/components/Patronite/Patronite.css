@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
+.patronite__email:hover {
+    color:rgba(255, 255, 255, 0.7);
+}
+
 .patronite_logoEmail {
     width: 0;
 }
