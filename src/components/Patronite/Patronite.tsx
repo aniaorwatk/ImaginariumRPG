@@ -18,12 +18,12 @@ const Patronite = () => {
         <div>
             {patronite ? <div className="patronite">
                 <>
-                    <a href={linkPatronite} target="_blank">
+                    <a href={linkPatronite} target="_blank" rel="noopener noreferrer">
                         <LogoPatronite className="patronite__logo" />
                     </a>
                     |
                     <LogoMail className="patronite_logoEmail" />
-                    <a href={`mailto:${patronite}`} target="_blank" className="patronite__email">{patronite}</a>
+                    <a href={`mailto:${patronite}`} target="_blank" rel="noopener noreferrer" className="patronite__email">{patronite}</a>
                 </>
             </div>
                 :
