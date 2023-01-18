@@ -7,7 +7,6 @@ import "./MainPage.scss";
 
 const MainPage = () => {
 
-  
   return (
     <div className="wrapper">
       <Header />
@@ -19,7 +18,7 @@ const MainPage = () => {
           </div>
           <Banner />
         </div>
-        {/* <Events /> */}
+        <Events />
       </main>
     </div>
   );

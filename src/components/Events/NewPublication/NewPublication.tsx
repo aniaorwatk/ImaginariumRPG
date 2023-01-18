@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getAction, IDataType, INewPublicationType, URL_IMAGINARIUM } from "../../../API/APIGet";
 import { LogoNewPublication } from "../../Logos/LogoNewPublication";
-import "./NewPublication.css";
+import "./NewPublication.scss";
 
 const NewPublication = () => {
 
