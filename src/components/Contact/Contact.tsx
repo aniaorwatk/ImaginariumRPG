@@ -1,6 +1,6 @@
 import labels from "../../labels";
 import message from "./../../assets/fe_messanger.svg";
-import "./Contact.css";
+import "./Contact.scss";
 
 const Contact = () => {
     return (

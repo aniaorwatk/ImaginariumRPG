@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getAction, IMediaType, URL_IMAGINARIUM, IDataType } from "../../API/APIGet";
-import "./Media.css";
+import "./Media.scss";
 
 const Media = () => {
 
@@ -19,7 +19,7 @@ const Media = () => {
                     <div className="media__icon-img">
                         <img className="media__icon-view" src={one.filename} alt={one.filename} />
                     </div>
-                    <p className="media__icon-title">{one.title}</p>
+                    <p className="mediaLink__icon-title">{one.title}</p>
                 </div>
             </a>
         )

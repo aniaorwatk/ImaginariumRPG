@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getAction, IBannerType, IDataType, URL_IMAGINARIUM } from "../../API/APIGet";
-import "./Banner.css";
+import "./Banner.scss";
 
 const Banner = () => {
 

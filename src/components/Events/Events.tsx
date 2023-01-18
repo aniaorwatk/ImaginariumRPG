@@ -4,7 +4,7 @@ import NewPublication from "./NewPublication/NewPublication";
 import { LogoBLotr } from "../Logos/LogoBLotr";
 import { LogoPublishingHouse } from "../Logos/LogoPublishingHouse";
 import arrowIcon from "./../../assets/arrow_icon.svg";
-import "./Events.css";
+import "./Events.scss";
 
 const Events = () => {
     const sectionPublications = useRef<HTMLDivElement>(null!);
@@ -22,9 +22,9 @@ const Events = () => {
 
     const allEvents = events.map(event => {
         return (
-            <div key={event.id} className="event">
-                <img src={event.filename} alt={event.title} className="event__img" />
-                <p className="event__title">{`“${event.title}”`}</p >
+            <div key={event.id} className="publication">
+                <img src={event.filename} alt={event.title} className="publication__img" />
+                <p className="publication__title">{`“${event.title}”`}</p >
             </div>
         )
     })
@@ -71,7 +71,7 @@ const Events = () => {
 
     return (
         events &&
-        <section className="publicationsBox">
+        <section className="publications">
             <NewPublication />
             <LogoBLotr className="publications__bogumil" />
             <div className="publications__publishingHouse">
@@ -79,12 +79,12 @@ const Events = () => {
             </div>
             <div className="publications__boxWithArrows" onMouseEnter={() => showArrow()} onMouseLeave={() => hiddenArrow()} onTouchMove={() => showArrow()} onTouchEnd={() => hiddenArrow()}>
                 {!scrollEnd &&
-                    <img src={arrowIcon} alt="arrow right" className={`publications__scroll arrowRight   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(+150)} onTouchMove={() => slide(+150)} />
+                    <img src={arrowIcon} alt="arrow right" className={`publications__boxWithArrows-scroll arrowRight   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(+150)} onTouchMove={() => slide(+150)} />
                 }
                 {scrollX !== 0 &&
-                    <img src={arrowIcon} alt="arrow left" className={`publications__scroll arrowLeft   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(-150)} onTouchMove={() => slide(-150)} />
+                    <img src={arrowIcon} alt="arrow left" className={`publications__boxWithArrows-scroll arrowLeft   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(-150)} onTouchMove={() => slide(-150)} />
                 }
-                <div className="publications" ref={sectionPublications} onScroll={scrollCheck}  >
+                <div className="publications__boxWithArrows-events" ref={sectionPublications} onScroll={scrollCheck}  >
                     {allEvents}
                 </div>
             </div>

@@ -1,0 +1,58 @@
+@import "./../../scss/Main";
+
+.newPublication {
+    margin-bottom: 14px;
+
+    &__link {
+        position: relative;
+
+        &-icon {
+            position: absolute;
+            z-index: 1;
+        }
+
+        &-img {
+            height: 100px;
+            width: 317px;
+            object-fit: cover;
+            border-radius: 8px;
+
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+
+        &-title {
+            margin: 0;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: $color-white-trans08;
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpointM) {
+
+    .newPublication {
+        &__link {
+            &-img {
+                width: 433px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $breakpointL) {
+    .newPublication {
+        &__link {
+            &-title {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 import labels from "../../labels";
 import LogoWhite from "../../assets/white_logo.svg";
 import Patronite from "../Patronite/Patronite";
-import "./Header.css";
+import "./Header.scss";
 
 const Header = () => {
 
