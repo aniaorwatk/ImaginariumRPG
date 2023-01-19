@@ -7,13 +7,14 @@ const Header = () => {
 
     return (
         <header className="header">
-            <div className="header__bogumil"></div>
+            <div className="header__bogumil" title="Bogumił in Love"></div>
             <div className="header__logo">
                 <div className="header__logo-bg">
-                    <img src={LogoWhite} alt="Logo Imaginarium" />
+                    <img src={LogoWhite} alt="Logo Imaginarium" title="Logo Imaginarium" loading="lazy"/>
                 </div>
             </div>
-            <h1 className="header__title">{labels.header.title}</h1>
+            <title><h1 className="header__title">{labels.header.title}</h1>   </title>
+            <meta name="description" content="Imaginarium RPG" />
             <p className="header__information">{labels.header.information}</p>
             <Patronite />
         </header>

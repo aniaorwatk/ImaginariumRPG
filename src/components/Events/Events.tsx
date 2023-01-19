@@ -23,7 +23,7 @@ const Events = () => {
     const allEvents = events.map(event => {
         return (
             <div key={event.id} className="publication">
-                <img src={event.filename} alt={event.title} className="publication__img" />
+                <img src={event.filename} alt={event.title} title={event.title} loading="lazy" className="publication__img" />
                 <p className="publication__title">{`“${event.title}”`}</p >
             </div>
         )
@@ -73,7 +73,7 @@ const Events = () => {
         events &&
         <section className="publications">
             <NewPublication />
-            <LogoBLotr className="publications__bogumil" />
+            <LogoBLotr className="publications__bogumil" title="Bomumil with ring"/>
             <div className="publications__publishingHouse">
                 <LogoPublishingHouse className="publications__publishingHouse-img" />
             </div>
