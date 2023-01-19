@@ -53,13 +53,13 @@
         }
 
         .arrowShow {
-            width: 54px;
+            width: 30px;
         }
 
         &-events {
             display: flex;
             flex-wrap: nowrap;
-            column-gap: 10px;
+            column-gap: 20px;
             width: 317px;
             overflow-y: hidden;
 
@@ -132,6 +132,10 @@
             &-events {
                 width: 433px;
             }
+
+            .arrowShow {
+                width: 54px;
+            }
         }
     }
 
@@ -176,8 +180,8 @@
         width: 204px;
 
         &__img {
-            width: 204px;
-            height: 257px;
+            // width: 204px;
+            // height: 257px;
         }
 
         &__title {

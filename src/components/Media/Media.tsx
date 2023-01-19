@@ -14,10 +14,10 @@ const Media = () => {
 
     const allMedia = media.map(one => {
         return (
-            <a href={`${one.source}`} target="_blank" rel="noopener noreferrer" key={one.id} className="media__link">
-                <div className="media__icon">
-                    <div className="media__icon-img">
-                        <img className="media__icon-view" src={one.filename} alt={one.filename} />
+            <a href={`${one.source}`} target="_blank" rel="noopener noreferrer" key={one.id} className="mediaLink">
+                <div className="mediaLink__icon">
+                    <div className="mediaLink__icon-img">
+                        <img className="mediaLink__icon-img--view" src={one.filename} alt={one.filename} />
                     </div>
                     <p className="mediaLink__icon-title">{one.title}</p>
                 </div>
