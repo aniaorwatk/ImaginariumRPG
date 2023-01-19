@@ -38,7 +38,7 @@
             position: absolute;
             object-fit: cover;
             top: 0;
-            height: 173px;
+            height: 213px;
             width: 0px;
             z-index: 1;
         }
@@ -53,13 +53,13 @@
         }
 
         .arrowShow {
-            width: 54px;
+            width: 30px;
         }
 
         &-events {
             display: flex;
             flex-wrap: nowrap;
-            column-gap: 10px;
+            column-gap: 20px;
             width: 317px;
             overflow-y: hidden;
 
@@ -68,12 +68,12 @@
             }
 
             &::-webkit-scrollbar-track {
-                background-color: rgba(64, 67, 98, 0.1);
+                background-color: $color-scrollbar-track;
                 border-radius: 8px;
             }
 
             &::-webkit-scrollbar-thumb {
-                background-color: rgba(64, 67, 98, 0.4);
+                background-color: $color-scrollbar-thumb;
                 border-radius: 8px;
             }
         }
@@ -87,8 +87,8 @@
     gap: 8px;
 
     &__img {
-        width: 156px;
-        height: 173px;
+        width: 179px;
+        height: 213px;
         border-radius: 8px;
         object-position: center;
         object-fit: cover;
@@ -98,7 +98,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
-        color: rgba(255, 255, 255, 0.8);
+        color: $color-white-trans08;
     }
 }
 
@@ -106,7 +106,7 @@
     .publications {
         padding: 90px 16px 0px 16px;
         border-radius: 16px;
-        background: rgba(81, 81, 81, 0.2);
+        background: $color-bg-publicationsM;
 
         &__bogumil {
             height: 230px;
@@ -125,12 +125,12 @@
         }
 
         &__boxWithArrows {
-            &-scroll {
-                height: 213px;
-            }
-
             &-events {
                 width: 433px;
+            }
+
+            .arrowShow {
+                width: 54px;
             }
         }
     }
@@ -139,8 +139,6 @@
         width: 179px;
 
         &__img {
-            width: 179px;
-            height: 213px;
             gap: 8px;
 
             &:hover {
@@ -162,10 +160,6 @@
         }
 
         &__boxWithArrows {
-            &-scroll {
-                height: 257px;
-            }
-
             &-events {
                 column-gap: 15px;
             }
@@ -174,11 +168,6 @@
 
     .publication {
         width: 204px;
-
-        &__img {
-            width: 204px;
-            height: 257px;
-        }
 
         &__title {
             font-weight: 400;
