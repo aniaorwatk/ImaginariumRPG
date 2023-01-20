@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { getAction, IEventType, IDataType, URL_IMAGINARIUM } from "../../API/APIGet";
 import NewPublication from "./NewPublication/NewPublication";
-import { LogoBLotr } from "../Logos/LogoBLotr";
 import { LogoPublishingHouse } from "../Logos/LogoPublishingHouse";
 import arrowIcon from "./../../assets/arrow_icon.svg";
 import "./Events.scss";
@@ -73,7 +72,7 @@ const Events = () => {
         events &&
         <section className="publications">
             <NewPublication />
-            <LogoBLotr className="publications__bogumil" />
+            <div className="publications__bogumil"></div>
             <div className="publications__publishingHouse">
                 <LogoPublishingHouse className="publications__publishingHouse-img" />
             </div>
