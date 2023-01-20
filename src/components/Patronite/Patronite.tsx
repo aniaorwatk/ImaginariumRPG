@@ -19,7 +19,7 @@ const Patronite = () => {
             {patronite ? <div className="patronite">
                 <>
                     <a href={linkPatronite} target="_blank" rel="noopener noreferrer">
-                        <LogoPatronite className="patronite__logo" title="Logo Patronite"/>
+                        <LogoPatronite className="patronite__logo" title="Logo Patronite" />
                     </a>
                     |
                     <LogoMail className="patronite_logoEmail" />

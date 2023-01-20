@@ -10,12 +10,11 @@ const Header = () => {
             <div className="header__bogumil" title="Bogumił in Love"></div>
             <div className="header__logo">
                 <div className="header__logo-bg">
-                    <img src={LogoWhite} alt="Logo Imaginarium" title="Logo Imaginarium" loading="lazy"/>
+                    <img src={LogoWhite} alt="Logo Imaginarium" title="Logo Imaginarium" loading="eager" width={103} height={99} />
                 </div>
             </div>
-            <title><h1 className="header__title">{labels.header.title}</h1>   </title>
-            <meta name="description" content="Imaginarium RPG" />
-            <p className="header__information">{labels.header.information}</p>
+            <h1 className="header__h1"><span className="header__title">{labels.header.title}</span><span className="header__information">{labels.header.information}</span></h1>
+            <meta name="description" content="grupa Imaginarium RPG - sesje gier fabularnych Imaginarium " />
             <Patronite />
         </header>
     )

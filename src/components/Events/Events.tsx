@@ -23,7 +23,7 @@ const Events = () => {
     const allEvents = events.map(event => {
         return (
             <div key={event.id} className="publication">
-                <img src={event.filename} alt={event.title} title={event.title} loading="lazy" className="publication__img" />
+                <img src={event.filename} alt={event.title} title={event.title} width={157} height={173} className="publication__img" loading="eager"/>
                 <p className="publication__title">{`“${event.title}”`}</p >
             </div>
         )
@@ -79,7 +79,7 @@ const Events = () => {
             </div>
             <div className="publications__boxWithArrows" onMouseEnter={() => showArrow()} onMouseLeave={() => hiddenArrow()} onTouchMove={() => showArrow()} onTouchEnd={() => hiddenArrow()}>
                 {!scrollEnd &&
-                    <img src={arrowIcon} alt="arrow right" className={`publications__boxWithArrows-scroll arrowRight   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(+150)} onTouchMove={() => slide(+150)} />
+                    <img src={arrowIcon} alt="arrow right" title="arrow" loading="eager" width={58} height={334} className={`publications__boxWithArrows-scroll arrowRight   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(+150)} onTouchMove={() => slide(+150)} />
                 }
                 {scrollX !== 0 &&
                     <img src={arrowIcon} alt="arrow left" className={`publications__boxWithArrows-scroll arrowLeft   ${arrow ? "arrowShow" : ""}`} onClick={() => slide(-150)} onTouchMove={() => slide(-150)} />
