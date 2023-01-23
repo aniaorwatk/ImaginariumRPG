@@ -14,7 +14,7 @@ const Banner = () => {
 
   return (
     <>
-      {banner && <img src={banner?.filename} alt={banner?.alt} className="bannerImg" />}
+      {banner && <img src={banner?.filename} alt={banner?.alt} title={banner?.alt} loading="eager" width={342} height={100}  className="bannerImg" />}
     </>
   )
 }
