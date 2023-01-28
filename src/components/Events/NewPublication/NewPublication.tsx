@@ -1,17 +1,12 @@
-import { useEffect, useState } from "react";
-import { getAction, IDataType, INewPublicationType, URL_IMAGINARIUM } from "../../../API/APIGet";
+import { INewPublicationType } from "../../../API/APIGet";
 import { LogoNewPublication } from "../../Logos/LogoNewPublication";
 import "./NewPublication.scss";
 
-const NewPublication = () => {
+interface IPType{
+    newPublication: INewPublicationType | undefined
+}
 
-    const [newPublication, setNewPublication] = useState<INewPublicationType>()
-
-    useEffect(() => {
-        getAction(URL_IMAGINARIUM, (data: IDataType) => {
-            setNewPublication(data.new_publication)
-        })
-    }, [newPublication]);
+const NewPublication = ({newPublication}:IPType) => {
 
     return (
         <section className="newPublication">

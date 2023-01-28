@@ -1,5 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Media Component Should render 1`] = `
+<DocumentFragment>
+  <div
+    class="media"
+  >
+    <a
+      class="mediaLink"
+      href="www.test1.pl"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        class="mediaLink__icon"
+      >
+        <div
+          class="mediaLink__icon-img"
+        >
+          <img
+            alt="test1.jpg"
+            class="mediaLink__icon-img--view"
+            src="test1.jpg"
+          />
+        </div>
+        <p
+          class="mediaLink__icon-title"
+        >
+          Discord
+        </p>
+      </div>
+    </a>
+    <a
+      class="mediaLink"
+      href="www.test2.pl"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        class="mediaLink__icon"
+      >
+        <div
+          class="mediaLink__icon-img"
+        >
+          <img
+            alt="test2.jpg"
+            class="mediaLink__icon-img--view"
+            src="test2.jpg"
+          />
+        </div>
+        <p
+          class="mediaLink__icon-title"
+        >
+          Twitch
+        </p>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Media Should render 1`] = `
 <DocumentFragment>
   <div
