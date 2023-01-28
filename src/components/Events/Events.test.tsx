@@ -16,21 +16,35 @@ describe('Events Component', () => {
         container = null;
     });
 
-    it('Should render', async () => {
-        const { asFragment } = render(<Events newPublication={undefined} events={undefined} />, container);
+    const obj = [
+        {
+            id: 1,
+            title: "Title 1",
+            filename: "test1.jpg",
+        }
+    ]
 
-        await screen.findAllByText('Title 1');
+    const obj2 =
+    {
+        alt: "testowy alt",
+        title: "Każdy jest Johnem nowa edycja",
+        filename: "test1.jpg",
+        source: "www.test1.pl"
+    }
 
-        expect(asFragment()).toMatchSnapshot();
+    it('Should render event with data', async () => {
+        render(<Events newPublication={obj2} events={obj} />, container)
+
+        const publication = screen.getByText(/Title 1/i);
+
+        expect(publication).toBeInTheDocument();
     })
 
-    it('Should display have two events', async () => {
-        render(<Events newPublication={{filename: "banner.jpg", alt: "Title 1", title:"Title 1"}} events={undefined} />, container);
+    it('Should render ', async () => {
+        const { asFragment } = render(<Events newPublication={obj2} events={obj} />, container)
 
-        const event1 = await screen.findAllByText('Title 1');
-        const event2 = await screen.findAllByText('Title 2');
+        await screen.findAllByAltText(/testowy alt/i);
 
-        expect(event1.length).toBe(1);
-        expect(event2.length).toBe(1);
+        expect(asFragment()).toMatchSnapshot();
     })
 })

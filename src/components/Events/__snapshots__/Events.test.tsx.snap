@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Events Component Should render  1`] = `
+<DocumentFragment>
+  <section
+    class="publications"
+  >
+    <section
+      class="newPublication"
+    >
+      <a
+        class="newPublication__link"
+        href="www.test1.pl"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <svg
+          class="newPublication__link-icon"
+        >
+          new.svg
+        </svg>
+        <img
+          alt="testowy alt"
+          class="newPublication__link-img"
+          height="100"
+          loading="eager"
+          src="test1.jpg"
+          title="testowy alt"
+          width="433"
+        />
+        <p
+          class="newPublication__link-title"
+        >
+          “Każdy jest Johnem nowa edycja”
+        </p>
+      </a>
+    </section>
+    <svg
+      class="publications__bogumil"
+      title="Bomumil with ring"
+    >
+      bLotr.svg
+    </svg>
+    <div
+      class="publications__publishingHouse"
+    >
+      <svg
+        class="publications__publishingHouse-img"
+      >
+        wydawnictwo.svg
+      </svg>
+    </div>
+    <div
+      class="publications__boxWithArrows"
+    >
+      <img
+        alt="arrow right"
+        class="publications__boxWithArrows-scroll arrowRight   "
+        height="334"
+        loading="eager"
+        src="arrow_icon.svg"
+        title="arrow"
+        width="58"
+      />
+      <div
+        class="publications__boxWithArrows-events"
+      >
+        <div
+          class="publication"
+        >
+          <img
+            alt="Title 1"
+            class="publication__img"
+            height="173"
+            loading="eager"
+            src="test1.jpg"
+            title="Title 1"
+            width="157"
+          />
+          <p
+            class="publication__title"
+          >
+            “Title 1”
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

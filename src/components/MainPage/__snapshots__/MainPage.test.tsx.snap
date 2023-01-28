@@ -195,10 +195,12 @@ exports[`MainPage Component Should render 1`] = `
               new.svg
             </svg>
             <img
+              alt="testowy alt"
               class="newPublication__link-img"
               height="100"
               loading="eager"
               src="test1.jpg"
+              title="testowy alt"
               width="433"
             />
             <p
@@ -477,10 +479,12 @@ exports[`MainPage Component Should render banner 1`] = `
               new.svg
             </svg>
             <img
+              alt="testowy alt"
               class="newPublication__link-img"
               height="100"
               loading="eager"
               src="test1.jpg"
+              title="testowy alt"
               width="433"
             />
             <p
@@ -759,10 +763,12 @@ exports[`MainPage Component Should render newPublication 1`] = `
               new.svg
             </svg>
             <img
+              alt="testowy alt"
               class="newPublication__link-img"
               height="100"
               loading="eager"
               src="test1.jpg"
+              title="testowy alt"
               width="433"
             />
             <p

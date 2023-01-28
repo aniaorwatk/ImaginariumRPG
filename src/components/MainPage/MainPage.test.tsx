@@ -38,8 +38,8 @@ describe('MainPage Component', () => {
        
         render(<MainPage/>, container);
 
-        const event1 = await screen.findAllByText('Title 1');
-        const event2 = await screen.findAllByText('Title 2');
+        const event1 = await screen.findAllByText(/Title 1/i);
+        const event2 = await screen.findAllByText(/Title 2/i);
 
         expect(event1.length).toBe(1);
         expect(event2.length).toBe(1);

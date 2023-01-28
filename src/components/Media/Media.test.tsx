@@ -16,21 +16,28 @@ describe('Media Component', () => {
         container = null;
     });
 
-    it('Should render', async () => {
-        const { asFragment } = render(<Media media={undefined}/>, container);
+    const obj = [
+        {
+            title: "Discord",
+            filename: "Discord",
+            id: 1,
+            source: "Discord"
+        }
+    ]
 
-        await screen.findAllByText('Discord');
+    it('Should render media with data', async () => {
 
-        expect(asFragment()).toMatchSnapshot();
+        const tree = render(<Media media={obj} />, container);
+
+        const media = screen.getByText('Discord');
+
+        expect(media).toBeInTheDocument();
     })
 
-    it('Should display have two events', async () => {
-        render(<Media media={undefined} />, container);
+    it('Should render', async () => {
 
-        const event1 = await screen.findAllByText('Discord');
-        const event2 = await screen.findAllByText('Twitch');
+        const tree = render(<Media media={obj} />);
 
-        expect(event1.length).toBe(1);
-        expect(event2.length).toBe(1);
+        expect(tree.baseElement).toMatchSnapshot()
     })
 })

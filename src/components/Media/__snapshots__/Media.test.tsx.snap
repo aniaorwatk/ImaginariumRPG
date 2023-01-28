@@ -1,60 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Component Should render 1`] = `
-<DocumentFragment>
-  <div
-    class="media"
-  >
-    <a
-      class="mediaLink"
-      href="www.test1.pl"
-      rel="noopener noreferrer"
-      target="_blank"
+<body>
+  <div />
+  <div>
+    <div
+      class="media"
     >
-      <div
-        class="mediaLink__icon"
+      <a
+        class="mediaLink"
+        href="Discord"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         <div
-          class="mediaLink__icon-img"
+          class="mediaLink__icon"
         >
-          <img
-            alt="test1.jpg"
-            class="mediaLink__icon-img--view"
-            src="test1.jpg"
-          />
+          <div
+            class="mediaLink__icon-img"
+          >
+            <img
+              alt="Discord"
+              class="mediaLink__icon-img--view"
+              height="200"
+              loading="eager"
+              src="Discord"
+              title="Discord"
+              width="200"
+            />
+          </div>
+          <p
+            class="mediaLink__icon-title"
+          >
+            Discord
+          </p>
         </div>
-        <p
-          class="mediaLink__icon-title"
-        >
-          Discord
-        </p>
-      </div>
-    </a>
-    <a
-      class="mediaLink"
-      href="www.test2.pl"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div
-        class="mediaLink__icon"
-      >
-        <div
-          class="mediaLink__icon-img"
-        >
-          <img
-            alt="test2.jpg"
-            class="mediaLink__icon-img--view"
-            src="test2.jpg"
-          />
-        </div>
-        <p
-          class="mediaLink__icon-title"
-        >
-          Twitch
-        </p>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
-</DocumentFragment>
+</body>
 `;

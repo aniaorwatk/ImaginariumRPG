@@ -40,7 +40,7 @@ export const handlers = [
             patronite_email: "imagrpg@gmail.com",
 
             new_publication:{
-              id: 1,
+              alt: "testowy alt",
               title: "Każdy jest Johnem nowa edycja",
               filename: "test1.jpg",
               source: "www.test1.pl"
