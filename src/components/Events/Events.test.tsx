@@ -17,7 +17,7 @@ describe('Events Component', () => {
     });
 
     it('Should render', async () => {
-        const { asFragment } = render(<Events />, container);
+        const { asFragment } = render(<Events newPublication={undefined} events={undefined} />, container);
 
         await screen.findAllByText('Title 1');
 
@@ -25,7 +25,7 @@ describe('Events Component', () => {
     })
 
     it('Should display have two events', async () => {
-        render(<Events />, container);
+        render(<Events newPublication={{filename: "banner.jpg", alt: "Title 1", title:"Title 1"}} events={undefined} />, container);
 
         const event1 = await screen.findAllByText('Title 1');
         const event2 = await screen.findAllByText('Title 2');

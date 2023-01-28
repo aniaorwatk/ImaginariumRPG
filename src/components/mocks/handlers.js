@@ -38,6 +38,13 @@ export const handlers = [
               alt: "Baner świąteczny"
             },
             patronite_email: "imagrpg@gmail.com",
+
+            new_publication:{
+              id: 1,
+              title: "Każdy jest Johnem nowa edycja",
+              filename: "test1.jpg",
+              source: "www.test1.pl"
+            }
           }
         }
       })

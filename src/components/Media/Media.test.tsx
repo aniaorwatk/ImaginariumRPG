@@ -17,7 +17,7 @@ describe('Media Component', () => {
     });
 
     it('Should render', async () => {
-        const { asFragment } = render(<Media/>, container);
+        const { asFragment } = render(<Media media={undefined}/>, container);
 
         await screen.findAllByText('Discord');
 
@@ -25,7 +25,7 @@ describe('Media Component', () => {
     })
 
     it('Should display have two events', async () => {
-        render(<Media />, container);
+        render(<Media media={undefined} />, container);
 
         const event1 = await screen.findAllByText('Discord');
         const event2 = await screen.findAllByText('Twitch');

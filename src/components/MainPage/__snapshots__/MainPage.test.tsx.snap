@@ -1,0 +1,847 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainPage Component Should render 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <header
+      class="header"
+    >
+      <div
+        class="header__bogumil"
+        title="Bogumił in Love"
+      />
+      <div
+        class="header__logo"
+      >
+        <div
+          class="header__logo-bg"
+        >
+          <img
+            alt="Logo Imaginarium"
+            height="99"
+            loading="eager"
+            src="white_logo.svg"
+            title="Logo Imaginarium"
+            width="103"
+          />
+        </div>
+      </div>
+      <h1
+        class="header__h1"
+      >
+        <span
+          class="header__title"
+        >
+          Imaginarium RPG
+        </span>
+        <span
+          class="header__information"
+        >
+          Sesje RPG | Warsztaty | Bohomazki
+        </span>
+      </h1>
+      <meta
+        content="grupa Imaginarium RPG - sesje gier fabularnych Imaginarium "
+        name="description"
+      />
+      <div
+        class="patronite"
+      >
+        <a
+          href="https://patronite.pl/imaginariumrpg"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            class="patronite__logo"
+            title="Logo Patronite"
+          >
+            patronite.svg
+          </svg>
+        </a>
+        |
+        <svg
+          class="patronite_logoEmail"
+        >
+          mail.svg
+        </svg>
+        <a
+          class="patronite__email"
+          href="mailto:imagrpg@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          imagrpg@gmail.com
+        </a>
+      </div>
+    </header>
+    <main
+      class="wrapper__main"
+    >
+      <div
+        class="wrapper__main-right"
+      >
+        <div
+          class="wrapper__main-right--media"
+        >
+          <div
+            class="contact"
+          >
+            <img
+              alt="icon message"
+              class="contact__img"
+              height="23"
+              loading="eager"
+              src="fe_messanger.svg"
+              title="icon message"
+              width="23"
+            />
+            <p
+              class="contact__text"
+            >
+              kontakt
+            </p>
+          </div>
+          <div
+            class="media"
+          >
+            <a
+              class="mediaLink"
+              href="www.test1.pl"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                class="mediaLink__icon"
+              >
+                <div
+                  class="mediaLink__icon-img"
+                >
+                  <img
+                    alt="test1.jpg"
+                    class="mediaLink__icon-img--view"
+                    height="200"
+                    loading="eager"
+                    src="test1.jpg"
+                    title="test1.jpg"
+                    width="200"
+                  />
+                </div>
+                <p
+                  class="mediaLink__icon-title"
+                >
+                  Discord
+                </p>
+              </div>
+            </a>
+            <a
+              class="mediaLink"
+              href="www.test2.pl"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                class="mediaLink__icon"
+              >
+                <div
+                  class="mediaLink__icon-img"
+                >
+                  <img
+                    alt="test2.jpg"
+                    class="mediaLink__icon-img--view"
+                    height="200"
+                    loading="eager"
+                    src="test2.jpg"
+                    title="test2.jpg"
+                    width="200"
+                  />
+                </div>
+                <p
+                  class="mediaLink__icon-title"
+                >
+                  Twitch
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <img
+          alt="Baner świąteczny"
+          class="bannerImg"
+          height="100"
+          loading="eager"
+          src="https://a.storyblok.com/f/188945/342x100/34919fd073/banner.jpg"
+          title="Baner świąteczny"
+          width="342"
+        />
+      </div>
+      <section
+        class="publications"
+      >
+        <section
+          class="newPublication"
+        >
+          <a
+            class="newPublication__link"
+            href="www.test1.pl"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              class="newPublication__link-icon"
+            >
+              new.svg
+            </svg>
+            <img
+              class="newPublication__link-img"
+              height="100"
+              loading="eager"
+              src="test1.jpg"
+              width="433"
+            />
+            <p
+              class="newPublication__link-title"
+            >
+              “Każdy jest Johnem nowa edycja”
+            </p>
+          </a>
+        </section>
+        <svg
+          class="publications__bogumil"
+          title="Bomumil with ring"
+        >
+          bLotr.svg
+        </svg>
+        <div
+          class="publications__publishingHouse"
+        >
+          <svg
+            class="publications__publishingHouse-img"
+          >
+            wydawnictwo.svg
+          </svg>
+        </div>
+        <div
+          class="publications__boxWithArrows"
+        >
+          <img
+            alt="arrow right"
+            class="publications__boxWithArrows-scroll arrowRight   "
+            height="334"
+            loading="eager"
+            src="arrow_icon.svg"
+            title="arrow"
+            width="58"
+          />
+          <div
+            class="publications__boxWithArrows-events"
+          >
+            <div
+              class="publication"
+            >
+              <img
+                alt="Title 1"
+                class="publication__img"
+                height="173"
+                loading="eager"
+                src="test1.jpg"
+                title="Title 1"
+                width="157"
+              />
+              <p
+                class="publication__title"
+              >
+                “Title 1”
+              </p>
+            </div>
+            <div
+              class="publication"
+            >
+              <img
+                alt="Title 2"
+                class="publication__img"
+                height="173"
+                loading="eager"
+                src="test2.jpg"
+                title="Title 2"
+                width="157"
+              />
+              <p
+                class="publication__title"
+              >
+                “Title 2”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MainPage Component Should render banner 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <header
+      class="header"
+    >
+      <div
+        class="header__bogumil"
+        title="Bogumił in Love"
+      />
+      <div
+        class="header__logo"
+      >
+        <div
+          class="header__logo-bg"
+        >
+          <img
+            alt="Logo Imaginarium"
+            height="99"
+            loading="eager"
+            src="white_logo.svg"
+            title="Logo Imaginarium"
+            width="103"
+          />
+        </div>
+      </div>
+      <h1
+        class="header__h1"
+      >
+        <span
+          class="header__title"
+        >
+          Imaginarium RPG
+        </span>
+        <span
+          class="header__information"
+        >
+          Sesje RPG | Warsztaty | Bohomazki
+        </span>
+      </h1>
+      <meta
+        content="grupa Imaginarium RPG - sesje gier fabularnych Imaginarium "
+        name="description"
+      />
+      <div
+        class="patronite"
+      >
+        <a
+          href="https://patronite.pl/imaginariumrpg"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            class="patronite__logo"
+            title="Logo Patronite"
+          >
+            patronite.svg
+          </svg>
+        </a>
+        |
+        <svg
+          class="patronite_logoEmail"
+        >
+          mail.svg
+        </svg>
+        <a
+          class="patronite__email"
+          href="mailto:imagrpg@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          imagrpg@gmail.com
+        </a>
+      </div>
+    </header>
+    <main
+      class="wrapper__main"
+    >
+      <div
+        class="wrapper__main-right"
+      >
+        <div
+          class="wrapper__main-right--media"
+        >
+          <div
+            class="contact"
+          >
+            <img
+              alt="icon message"
+              class="contact__img"
+              height="23"
+              loading="eager"
+              src="fe_messanger.svg"
+              title="icon message"
+              width="23"
+            />
+            <p
+              class="contact__text"
+            >
+              kontakt
+            </p>
+          </div>
+          <div
+            class="media"
+          >
+            <a
+              class="mediaLink"
+              href="www.test1.pl"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                class="mediaLink__icon"
+              >
+                <div
+                  class="mediaLink__icon-img"
+                >
+                  <img
+                    alt="test1.jpg"
+                    class="mediaLink__icon-img--view"
+                    height="200"
+                    loading="eager"
+                    src="test1.jpg"
+                    title="test1.jpg"
+                    width="200"
+                  />
+                </div>
+                <p
+                  class="mediaLink__icon-title"
+                >
+                  Discord
+                </p>
+              </div>
+            </a>
+            <a
+              class="mediaLink"
+              href="www.test2.pl"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                class="mediaLink__icon"
+              >
+                <div
+                  class="mediaLink__icon-img"
+                >
+                  <img
+                    alt="test2.jpg"
+                    class="mediaLink__icon-img--view"
+                    height="200"
+                    loading="eager"
+                    src="test2.jpg"
+                    title="test2.jpg"
+                    width="200"
+                  />
+                </div>
+                <p
+                  class="mediaLink__icon-title"
+                >
+                  Twitch
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <img
+          alt="Baner świąteczny"
+          class="bannerImg"
+          height="100"
+          loading="eager"
+          src="https://a.storyblok.com/f/188945/342x100/34919fd073/banner.jpg"
+          title="Baner świąteczny"
+          width="342"
+        />
+      </div>
+      <section
+        class="publications"
+      >
+        <section
+          class="newPublication"
+        >
+          <a
+            class="newPublication__link"
+            href="www.test1.pl"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              class="newPublication__link-icon"
+            >
+              new.svg
+            </svg>
+            <img
+              class="newPublication__link-img"
+              height="100"
+              loading="eager"
+              src="test1.jpg"
+              width="433"
+            />
+            <p
+              class="newPublication__link-title"
+            >
+              “Każdy jest Johnem nowa edycja”
+            </p>
+          </a>
+        </section>
+        <svg
+          class="publications__bogumil"
+          title="Bomumil with ring"
+        >
+          bLotr.svg
+        </svg>
+        <div
+          class="publications__publishingHouse"
+        >
+          <svg
+            class="publications__publishingHouse-img"
+          >
+            wydawnictwo.svg
+          </svg>
+        </div>
+        <div
+          class="publications__boxWithArrows"
+        >
+          <img
+            alt="arrow right"
+            class="publications__boxWithArrows-scroll arrowRight   "
+            height="334"
+            loading="eager"
+            src="arrow_icon.svg"
+            title="arrow"
+            width="58"
+          />
+          <div
+            class="publications__boxWithArrows-events"
+          >
+            <div
+              class="publication"
+            >
+              <img
+                alt="Title 1"
+                class="publication__img"
+                height="173"
+                loading="eager"
+                src="test1.jpg"
+                title="Title 1"
+                width="157"
+              />
+              <p
+                class="publication__title"
+              >
+                “Title 1”
+              </p>
+            </div>
+            <div
+              class="publication"
+            >
+              <img
+                alt="Title 2"
+                class="publication__img"
+                height="173"
+                loading="eager"
+                src="test2.jpg"
+                title="Title 2"
+                width="157"
+              />
+              <p
+                class="publication__title"
+              >
+                “Title 2”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MainPage Component Should render newPublication 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <header
+      class="header"
+    >
+      <div
+        class="header__bogumil"
+        title="Bogumił in Love"
+      />
+      <div
+        class="header__logo"
+      >
+        <div
+          class="header__logo-bg"
+        >
+          <img
+            alt="Logo Imaginarium"
+            height="99"
+            loading="eager"
+            src="white_logo.svg"
+            title="Logo Imaginarium"
+            width="103"
+          />
+        </div>
+      </div>
+      <h1
+        class="header__h1"
+      >
+        <span
+          class="header__title"
+        >
+          Imaginarium RPG
+        </span>
+        <span
+          class="header__information"
+        >
+          Sesje RPG | Warsztaty | Bohomazki
+        </span>
+      </h1>
+      <meta
+        content="grupa Imaginarium RPG - sesje gier fabularnych Imaginarium "
+        name="description"
+      />
+      <div
+        class="patronite"
+      >
+        <a
+          href="https://patronite.pl/imaginariumrpg"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <svg
+            class="patronite__logo"
+            title="Logo Patronite"
+          >
+            patronite.svg
+          </svg>
+        </a>
+        |
+        <svg
+          class="patronite_logoEmail"
+        >
+          mail.svg
+        </svg>
+        <a
+          class="patronite__email"
+          href="mailto:imagrpg@gmail.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          imagrpg@gmail.com
+        </a>
+      </div>
+    </header>
+    <main
+      class="wrapper__main"
+    >
+      <div
+        class="wrapper__main-right"
+      >
+        <div
+          class="wrapper__main-right--media"
+        >
+          <div
+            class="contact"
+          >
+            <img
+              alt="icon message"
+              class="contact__img"
+              height="23"
+              loading="eager"
+              src="fe_messanger.svg"
+              title="icon message"
+              width="23"
+            />
+            <p
+              class="contact__text"
+            >
+              kontakt
+            </p>
+          </div>
+          <div
+            class="media"
+          >
+            <a
+              class="mediaLink"
+              href="www.test1.pl"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                class="mediaLink__icon"
+              >
+                <div
+                  class="mediaLink__icon-img"
+                >
+                  <img
+                    alt="test1.jpg"
+                    class="mediaLink__icon-img--view"
+                    height="200"
+                    loading="eager"
+                    src="test1.jpg"
+                    title="test1.jpg"
+                    width="200"
+                  />
+                </div>
+                <p
+                  class="mediaLink__icon-title"
+                >
+                  Discord
+                </p>
+              </div>
+            </a>
+            <a
+              class="mediaLink"
+              href="www.test2.pl"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <div
+                class="mediaLink__icon"
+              >
+                <div
+                  class="mediaLink__icon-img"
+                >
+                  <img
+                    alt="test2.jpg"
+                    class="mediaLink__icon-img--view"
+                    height="200"
+                    loading="eager"
+                    src="test2.jpg"
+                    title="test2.jpg"
+                    width="200"
+                  />
+                </div>
+                <p
+                  class="mediaLink__icon-title"
+                >
+                  Twitch
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <img
+          alt="Baner świąteczny"
+          class="bannerImg"
+          height="100"
+          loading="eager"
+          src="https://a.storyblok.com/f/188945/342x100/34919fd073/banner.jpg"
+          title="Baner świąteczny"
+          width="342"
+        />
+      </div>
+      <section
+        class="publications"
+      >
+        <section
+          class="newPublication"
+        >
+          <a
+            class="newPublication__link"
+            href="www.test1.pl"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              class="newPublication__link-icon"
+            >
+              new.svg
+            </svg>
+            <img
+              class="newPublication__link-img"
+              height="100"
+              loading="eager"
+              src="test1.jpg"
+              width="433"
+            />
+            <p
+              class="newPublication__link-title"
+            >
+              “Każdy jest Johnem nowa edycja”
+            </p>
+          </a>
+        </section>
+        <svg
+          class="publications__bogumil"
+          title="Bomumil with ring"
+        >
+          bLotr.svg
+        </svg>
+        <div
+          class="publications__publishingHouse"
+        >
+          <svg
+            class="publications__publishingHouse-img"
+          >
+            wydawnictwo.svg
+          </svg>
+        </div>
+        <div
+          class="publications__boxWithArrows"
+        >
+          <img
+            alt="arrow right"
+            class="publications__boxWithArrows-scroll arrowRight   "
+            height="334"
+            loading="eager"
+            src="arrow_icon.svg"
+            title="arrow"
+            width="58"
+          />
+          <div
+            class="publications__boxWithArrows-events"
+          >
+            <div
+              class="publication"
+            >
+              <img
+                alt="Title 1"
+                class="publication__img"
+                height="173"
+                loading="eager"
+                src="test1.jpg"
+                title="Title 1"
+                width="157"
+              />
+              <p
+                class="publication__title"
+              >
+                “Title 1”
+              </p>
+            </div>
+            <div
+              class="publication"
+            >
+              <img
+                alt="Title 2"
+                class="publication__img"
+                height="173"
+                loading="eager"
+                src="test2.jpg"
+                title="Title 2"
+                width="157"
+              />
+              <p
+                class="publication__title"
+              >
+                “Title 2”
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</DocumentFragment>
+`;
