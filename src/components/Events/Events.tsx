@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { IEventType, INewPublicationType } from "../../API/APIGet";
 import NewPublication from "./NewPublication/NewPublication";
-import { LogoBLotr } from "../Logos/LogoBLotr";
 import { LogoPublishingHouse } from "../Logos/LogoPublishingHouse";
 import arrowIcon from "./../../assets/arrow_icon.svg";
 import "./Events.scss";

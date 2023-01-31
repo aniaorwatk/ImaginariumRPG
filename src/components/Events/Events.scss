@@ -13,8 +13,15 @@
 
     &__bogumil {
         position: absolute;
-        right: -10px;
+        content: "";
+        background-image: url("./../../assets/bogumil_lotr.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: 25px;
         top: -35px;
+        width: 115px;
+        height: 152px;
+        transform: rotate(155deg);
         z-index: 2;
     }
 
@@ -109,9 +116,8 @@
         background: $color-bg-publicationsM;
 
         &__bogumil {
-            height: 230px;
-            width: 190px;
-            right: -49px;
+            height: 183.72px;
+            width: 139px;
         }
 
         &__publishingHouse {
@@ -155,8 +161,7 @@
 @media only screen and (min-width: 1439px) {
     .publications {
         &__bogumil {
-            height: 255px;
-            width: 215px;
+right: 2px;
         }
 
         &__boxWithArrows {

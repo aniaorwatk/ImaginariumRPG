@@ -1,1 +1,0 @@
-export { ReactComponent as LogoBLotr} from "./../../assets/bLotr.svg"
