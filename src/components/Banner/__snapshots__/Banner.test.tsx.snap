@@ -1,11 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Banner Should render 1`] = `
+exports[`Banner Component Should render 1`] = `
 <DocumentFragment>
   <img
     alt="Baner świąteczny"
     class="bannerImg"
+    height="100"
+    loading="eager"
     src="https://a.storyblok.com/f/188945/342x100/34919fd073/banner.jpg"
+    title="Baner świąteczny"
+    width="342"
   />
 </DocumentFragment>
 `;

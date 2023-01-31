@@ -1,28 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Patronite Should render 1`] = `
+exports[`Patronite Component Should render 1`] = `
 <DocumentFragment>
-  <div>
-    <div
-      class="patronite"
+  <div
+    class="patronite"
+  >
+    <a
+      href="https://patronite.pl/imaginariumrpg"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       <svg
         class="patronite__logo"
+        title="Logo Patronite"
       >
         patronite.svg
       </svg>
-      |
-      <svg
-        class="patronite_logoEmail"
-      >
-        mail.svg
-      </svg>
-      <p
-        class="patronite__email"
-      >
-        imagrpg@gmail.com
-      </p>
-    </div>
+    </a>
+    |
+    <svg
+      class="patronite_logoEmail"
+    >
+      mail.svg
+    </svg>
+    <a
+      class="patronite__email"
+      href="mailto:imagrpg@gmail.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      imagrpg@gmail.com
+    </a>
   </div>
 </DocumentFragment>
 `;

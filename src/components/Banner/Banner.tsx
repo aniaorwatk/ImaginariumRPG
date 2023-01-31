@@ -1,20 +1,17 @@
-import { useEffect, useState } from "react";
-import { getAction, IBannerType, IDataType, URL_IMAGINARIUM } from "../../API/APIGet";
 import "./Banner.scss";
 
-const Banner = () => {
+interface IBType {
+  banner: {
+    filename: string,
+    alt: string
+  } | undefined
+}
 
-  const [banner, setBanner] = useState<IBannerType>()
-
-  useEffect(() => {
-    getAction(URL_IMAGINARIUM, (data: IDataType) => {
-      setBanner(data.banner)
-    })
-  }, [banner]);
+const Banner = ({ banner }: IBType) => {
 
   return (
     <>
-      {banner && <img src={banner?.filename} alt={banner?.alt} title={banner?.alt} loading="eager" width={342} height={100}  className="bannerImg" />}
+      {banner && <img src={banner?.filename} alt={banner?.alt} title={banner?.alt} loading="eager" width={342} height={100} className="bannerImg" />}
     </>
   )
 }

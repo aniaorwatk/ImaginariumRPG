@@ -1,5 +1,5 @@
-import labels from "../../labels"
-import "./PageNotFound.scss"
+import labels from "../../labels";
+import "./PageNotFound.scss";
 
 const PageNotFound = () => {
 
